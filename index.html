@@ -323,11 +323,190 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <!-- Layout Demo -->
-              <div class="layout-demo-wrapper">
-                <div class="layout-demo-placeholder">     
-                  content
+              <div class="container-fluid">
+                <!-- Greeting Section -->
+                <h4 class="py-3 mb-4"><span class="text-muted fw-light">Hello,</span> User!</h4>
+            
+                <!-- Cards Section -->
+                <div class="row mt-4">
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Clients</h5>
+                        <p class="card-text">123</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Amount</h5>
+                        <p class="card-text">₹123,456</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Paid</h5>
+                        <p class="card-text">₹100,000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Due</h5>
+                        <p class="card-text">₹23,456</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Products</h5>
+                        <p class="card-text">50</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Invoices</h5>
+                        <p class="card-text">200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Paid Invoices</h5>
+                        <p class="card-text">150</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Total Unpaid Invoices</h5>
+                        <p class="card-text">50</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Table Section -->
+               <!-- Basic Bootstrap Table -->
+              <div class="card">
+                <h5 class="card-header">Recent Invoice Details</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>INVOICE NO.</th>
+                        <th>CUSTOMER NAME</th>
+                        <th>INVOICE DATE</th>
+                        <th>PAYMENT STATUS</th>
+                        <th>AMOUNT PAID</th>
+                        <th>TOTAL BALANCE</th>
+                        <th>ACTIONS</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <tr>
+                        <td>001</td>
+                        <td>
+                          <span class="fw-medium">Nilesh Tayade</span>
+                        </td>
+                        <td>
+                           2024-07-18
+                        </td>
+                        <td><span class="badge bg-label-success me-1">Paid</span></td>
+                        <td>
+                          <span>₹</span>1,000
+                       </td>
+                        <td>
+                          <span>₹</span>0
+                       </td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-regular fa-eye me-1"></i> Preview Invoice</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-regular fa-envelope me-1"></i> Send Email</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-solid fa-download me-1"></i> Download</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-regular fa-clone me-1"></i> Duplicate</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>002</td>
+                        <td>
+                          <span class="fw-medium">Satyendra Chauhan</span>
+                        </td>
+                        <td>
+                           2024-07-19
+                        </td>
+                        <td><span class="badge bg-label-warning me-1">Unpaid</span></td>
+                        <td>
+                          <span>₹</span>500
+                       </td>
+                        <td>
+                          <span>₹</span>500
+                       </td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-regular fa-eye me-1"></i> Preview Invoice</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-regular fa-envelope me-1"></i> Send Email</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-solid fa-download me-1"></i> Download</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="fa-regular fa-clone me-1"></i> Duplicate</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
                 </div>
               </div>
+              <!--/ Basic Bootstrap Table -->
+              </div>
+            
               <!--/ Layout Demo -->
             </div>
             <!-- / Content -->

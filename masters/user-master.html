@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed layout-wide"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="./assets/"
+  data-assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -23,7 +23,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="./assets/img/favicon/favicon.ico"
+      href="../assets/img/favicon/favicon.ico"
     />
 
     <!-- Fonts -->
@@ -34,7 +34,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -46,29 +46,29 @@
     <!-- Core CSS -->
     <link
       rel="stylesheet"
-      href="./assets/vendor/css/core.css"
+      href="../assets/vendor/css/core.css"
       class="template-customizer-core-css"
     />
     <link
       rel="stylesheet"
-      href="./assets/vendor/css/theme-default.css"
+      href="../assets/vendor/css/theme-default.css"
       class="template-customizer-theme-css"
     />
-    <link rel="stylesheet" href="./assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link
       rel="stylesheet"
-      href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
     />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="./assets/vendor/js/helpers.js"></script>
+    <script src="../assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="./assets/js/config.js"></script>
+    <script src="../assets/js/config.js"></script>
   </head>
 
   <body>
@@ -84,7 +84,7 @@
           <div class="app-brand demo">
             <a href="index.html" class="app-brand-link">
               <span class="app-brand-logo demo">
-                <img src="assets/img/logo/sitesoch.svg" alt="" />
+                <img src="../assets/img/logo/sitesoch.svg" alt="" />
               </span>
               <span
                 class="app-brand-text demo menu-text fw-bold ms-2"
@@ -258,7 +258,7 @@
                   >
                     <div class="avatar avatar-online">
                       <img
-                        src="./assets/img/avatars/1.png"
+                        src="../assets/img/avatars/1.png"
                         alt
                         class="w-px-40 h-auto rounded-circle"
                       />
@@ -271,7 +271,7 @@
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
                               <img
-                                src="./assets/img/avatars/1.png"
+                                src="../assets/img/avatars/1.png"
                                 alt
                                 class="w-px-40 h-auto rounded-circle"
                               />
@@ -323,7 +323,252 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <!-- Layout Demo -->
-             content
+
+
+<!--Main content starts from here-->   
+ 
+
+<!-- <div class="d-flex align-items-center justify-content-between py-3 mb-4">
+  <h4>User master</h4>
+  <button type="button" class="btn btn-success">User</button>
+</div> -->
+
+
+<div class="d-flex align-items-center justify-content-between py-3 mb-4">
+  <h4 class="m-0">User master</h4>
+  <button
+    type="button"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#modalCenter">
+    User
+  </button>
+</div>
+
+<div class="col-lg-4 col-md-6">
+  <div class="mt-3">
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitle">User Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col mb-3">
+                <label for="userId" class="form-label">User Id</label>
+                <input
+                  type="text"
+                  id="userId"
+                  class="form-control"
+                  placeholder="Enter User Id" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  class="form-control"
+                  placeholder="Enter Full Name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <label for="emailId" class="form-label">Email Id</label>
+                <input
+                  type="email"
+                  id="emailId"
+                  class="form-control"
+                  placeholder="xxxx@xxx.xx" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <label for="mobileNumber" class="form-label">Mobile Number</label>
+                <input
+                  type="text"
+                  id="mobileNumber"
+                  class="form-control"
+                  placeholder="Enter Mobile Number" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="Enter Address" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <label for="role" class="form-label">Role</label>
+                <input
+                  type="text"
+                  id="role"
+                  class="form-control"
+                  placeholder="Enter Role" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col mb-3">
+                <label for="status" class="form-label">Status</label>
+                <select id="status" class="form-control">
+                  <option value="paid">Paid</option>
+                  <option value="unpaid">Unpaid</option>
+                  <option value="remaining">Remaining</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Table starts from here -->
+<div class="card">
+  <h5 class="card-header">Users Information</h5>
+  <div class="table-responsive text-nowrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Sr No</th>
+          <th>User Id</th>
+          <th>Full Name</th>
+          <th>Email Id</th>
+          <th>Mobile Number</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody class="table-border-bottom-0">
+        <tr>
+          <td>
+            1
+          </td>
+          <td>0121</td>
+
+          <td>Jasica Thompson</td>
+
+          <td>jasica@gmail.com</td>
+
+          <td>+1 234 567 8901</td>
+
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            2
+          </td>
+          <td>0122</td>
+
+          <td>John Smith</td>
+
+          <td>john@gmail.com</td>
+
+          <td>+1 234 567 8902</td>
+
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           3
+          </td>
+          <td>0123</td>
+
+          <td>Jason Williams</td>
+          
+          <td>jason@gmail.com</td>
+
+          <td>+1 234 567 8903</td>
+
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            4
+          </td>
+          <td>0124</td>
+
+          <td>Mona Brown</td>
+          
+          <td>mona@gmail.com</td>
+
+          <td>+1 234 567 8904</td>
+
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+            <!--/ Basic Bootstrap Table -->
+
+            <hr class="my
               <!--/ Layout Demo -->
             </div>
             <!-- / Content -->
@@ -380,18 +625,18 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
-    <script src="./assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="./assets/vendor/libs/popper/popper.js"></script>
-    <script src="./assets/vendor/js/bootstrap.js"></script>
-    <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="./assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
 

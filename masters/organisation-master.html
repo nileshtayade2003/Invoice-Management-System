@@ -328,20 +328,14 @@
 <!--Main content starts from here-->   
  
 
-<!-- <div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4>User master</h4>
-  <button type="button" class="btn btn-success">User</button>
-</div> -->
-
-
 <div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4 class="m-0">User Master</h4>
+  <h4 class="m-0">Organisation Master</h4>
   <button
     type="button"
     class="btn btn-primary"
     data-bs-toggle="modal"
     data-bs-target="#modalCenter">
-    User
+    Organisation
   </button>
 </div>
 
@@ -353,7 +347,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="modalCenterTitle">User Details</h5>
+            <h5 class="modal-title" id="modalCenterTitle">Organisation Details</h5>
             <button
               type="button"
               class="btn-close"
@@ -363,72 +357,42 @@
           <div class="modal-body">
             <div class="row">
               <div class="col mb-3">
-                <label for="userId" class="form-label">User Id</label>
+                <label for="userId" class="form-label">Organisation Id</label>
                 <input
                   type="text"
-                  id="userId"
+                  id="OrganisationId"
                   class="form-control"
-                  placeholder="Enter User Id" />
+                  placeholder="Enter Organisation Id" />
               </div>
             </div>
             <div class="row">
               <div class="col mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
+                <label for="fullName" class="form-label">Organisation Name</label>
                 <input
                   type="text"
-                  id="fullName"
+                  id="OrganisationName"
                   class="form-control"
-                  placeholder="Enter Full Name" />
+                  placeholder="Enter Organisation Name" />
               </div>
             </div>
             <div class="row">
               <div class="col mb-3">
-                <label for="emailId" class="form-label">Email Id</label>
+                <label for="emailId" class="form-label">Logo Image</label>
                 <input
-                  type="email"
-                  id="emailId"
+                  type="file"
+                  id="logoimage"
                   class="form-control"
-                  placeholder="xxxx@xxx.xx" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="mobileNumber" class="form-label">Mobile Number</label>
-                <input
-                  type="text"
-                  id="mobileNumber"
-                  class="form-control"
-                  placeholder="Enter Mobile Number" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="address" class="form-label">Address</label>
-                <input
-                  type="text"
-                  id="address"
-                  class="form-control"
-                  placeholder="Enter Address" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="role" class="form-label">Role</label>
-                <input
-                  type="text"
-                  id="role"
-                  class="form-control"
-                  placeholder="Enter Role" />
+                  placeholder="Choose Logo Image" />
               </div>
             </div>
             <div class="row">
               <div class="col mb-3">
                 <label for="status" class="form-label">Status</label>
-                <select id="status" class="form-control">
-                  <option value="paid">Paid</option>
-                  <option value="unpaid">Unpaid</option>
-                  <option value="remaining">Remaining</option>
-                </select>
+                <input
+                  type="text"
+                  id="OrganisationId"
+                  class="form-control"
+                  placeholder="Enter Status" />
               </div>
             </div>
           </div>
@@ -449,97 +413,88 @@
 
 <!-- Table starts from here -->
 <div class="card">
-  <h5 class="card-header">Users Information</h5>
-  <div class="table-responsive text-nowrap">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="text-center">Sr No</th>
-          <th class="text-center">User Id</th>
-          <th class="text-center">Full Name</th>
-          <th class="text-center">Email Id</th>
-          <th class="text-center">Mobile Number</th>
-          <th class="text-center">Actions</th>
-        </tr>
-      </thead>
-      <tbody class="table-border-bottom-0">
-        <tr>
-          <td class="text-center">1</td>
-          <td class="text-center">0121</td>
-          <td class="text-center">Jasica Thompson</td>
-          <td class="text-center">jasica@gmail.com</td>
-          <td class="text-center">+1 234 567 8901</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+    <h5 class="card-header">Users Information</h5>
+    <div class="table-responsive text-nowrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="text-center">Sr No</th>
+            <th class="text-center">Organisation Id</th>
+            <th class="text-center">Organisation Name</th>
+            <th class="text-center">Actions</th>
+          </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+          <tr>
+            <td class="text-center">1</td>
+            <td class="text-center">101</td>
+            <td class="text-center">InnovateTech Solutions</td>
+            <td class="text-center">
+              <div class="dropdown">
+                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                </div>
               </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center">2</td>
-          <td class="text-center">0122</td>
-          <td class="text-center">John Smith</td>
-          <td class="text-center">john@gmail.com</td>
-          <td class="text-center">+1 234 567 8902</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">2</td>
+            <td class="text-center">102</td>
+            <td class="text-center">Global Ventures Ltd.</td>
+            <td class="text-center">
+              <div class="dropdown">
+                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+                </div>
               </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center">3</td>
-          <td class="text-center">0123</td>
-          <td class="text-center">Jason Williams</td>
-          <td class="text-center">jason@gmail.com</td>
-          <td class="text-center">+1 234 567 8903</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">3</td>
+            <td class="text-center">103</td>
+            <td class="text-center">Pioneer Enterprises</td>
+            <td class="text-center">
+              <div class="dropdown">
+                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+                </div>
               </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center">4</td>
-          <td class="text-center">0124</td>
-          <td class="text-center">Mona Brown</td>
-          <td class="text-center">mona@gmail.com</td>
-          <td class="text-center">+1 234 567 8904</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="text-center">4</td>
+            <td class="text-center">104</td>
+            <td class="text-center">Synergy Dynamics Inc.</td>
+            <td class="text-center">
+              <div class="dropdown">
+                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                  <i class="bx bx-dots-vertical-rounded"></i>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
+                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
+                </div>
               </div>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
-
+  
+  
 
 
 

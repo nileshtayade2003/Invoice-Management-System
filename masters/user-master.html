@@ -122,12 +122,12 @@
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="user-master.html" class="menu-link">
+                  <a href="index.html" class="menu-link">
                     <div data-i18n="Analytics">User Master</div>
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="organisation-master.html" class="menu-link">
+                  <a href="index.html" class="menu-link">
                     <div data-i18n="Analytics">Organization Master</div>
                   </a>
                 </li>
@@ -142,7 +142,7 @@
                   </a>
                 </li>
                 <li class="menu-item">
-                  <a href="client-master.html" class="menu-link">
+                  <a href="index.html" class="menu-link">
                     <div data-i18n="Analytics">client Master</div>
                   </a>
                 </li>
@@ -360,6 +360,7 @@
               data-bs-dismiss="modal"
               aria-label="Close"></button>
           </div>
+          <form>
           <div class="modal-body">
             <div class="row">
               <div class="col mb-3">
@@ -413,21 +414,21 @@
             </div>
             <div class="row">
               <div class="col mb-3">
-                <label for="role" class="form-label">Role</label>
-                <input
-                  type="text"
-                  id="role"
-                  class="form-control"
-                  placeholder="Enter Role" />
+                <label for="defaultSelect" class="form-label">Role</label>
+                <select id="defaultSelect" class="form-select">
+                  <option disabled selected>Select Role</option>
+                  <option value="1">Admin</option>
+                  <option value="2">User</option>
+                </select>
               </div>
             </div>
             <div class="row">
               <div class="col mb-3">
-                <label for="status" class="form-label">Status</label>
-                <select id="status" class="form-control">
-                  <option value="paid">Paid</option>
-                  <option value="unpaid">Unpaid</option>
-                  <option value="remaining">Remaining</option>
+                <label for="defaultSelect" class="form-label">Status</label>
+                <select id="defaultSelect" class="form-select">
+                  <option disabled selected>Select Status</option>
+                  <option value="1">Active</option>
+                  <option value="2">Inactive</option>
                 </select>
               </div>
             </div>
@@ -436,8 +437,9 @@
             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
               Cancel
             </button>
-            <button type="button" class="btn btn-primary">Add Changes</button>
+            <button type="submit" class="btn btn-primary">Add Changes</button>
           </div>
+          </form>
         </div>
       </div>
     </div>
@@ -545,7 +547,7 @@
 
             <!--/ Basic Bootstrap Table -->
 
-            <hr class="my
+            <hr class="my"
               <!--/ Layout Demo -->
             </div>
             <!-- / Content -->

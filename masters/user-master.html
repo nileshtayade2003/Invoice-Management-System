@@ -328,22 +328,23 @@
 <!--Main content starts from here-->   
  
 
-<!-- <div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4>User master</h4>
-  <button type="button" class="btn btn-success">User</button>
-</div> -->
-
-
-<div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4 class="m-0">User Master</h4>
-  <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#modalCenter">
-    User
-  </button>
+<div class="container">
+  <div class="row">
+      <div class="col-12 col-md-6 d-flex justify-content-between align-items-center py-3 mb-4">
+          <h4 class="m-0">User Master</h4>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start py-3 mb-4">
+          <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalCenter">
+              Add User
+          </button>
+      </div>
+  </div>
 </div>
+
 
 <div class="col-lg-4 col-md-6">
   <div class="mt-3">
@@ -360,7 +361,7 @@
               data-bs-dismiss="modal"
               aria-label="Close"></button>
           </div>
-          <form>
+          <form action="">
           <div class="modal-body">
             <div class="row">
               <div class="col mb-3">
@@ -369,7 +370,7 @@
                   type="text"
                   id="userId"
                   class="form-control"
-                  placeholder="Enter User Id" />
+                  placeholder="Enter User Id" required/>
               </div>
             </div>
             <div class="row">
@@ -379,7 +380,7 @@
                   type="text"
                   id="fullName"
                   class="form-control"
-                  placeholder="Enter Full Name" />
+                  placeholder="Enter Full Name" required/>
               </div>
             </div>
             <div class="row">
@@ -389,7 +390,7 @@
                   type="email"
                   id="emailId"
                   class="form-control"
-                  placeholder="xxxx@xxx.xx" />
+                  placeholder="xxxx@xxx.xx" required/>
               </div>
             </div>
             <div class="row">
@@ -399,7 +400,7 @@
                   type="text"
                   id="mobileNumber"
                   class="form-control"
-                  placeholder="Enter Mobile Number" />
+                  placeholder="Enter Mobile Number" required/>
               </div>
             </div>
             <div class="row">
@@ -409,13 +410,13 @@
                   type="text"
                   id="address"
                   class="form-control"
-                  placeholder="Enter Address" />
+                  placeholder="Enter Address" required/>
               </div>
             </div>
             <div class="row">
               <div class="col mb-3">
                 <label for="defaultSelect" class="form-label">Role</label>
-                <select id="defaultSelect" class="form-select">
+                <select id="defaultSelect" class="form-select form-control required">
                   <option disabled selected>Select Role</option>
                   <option value="1">Admin</option>
                   <option value="2">User</option>
@@ -547,7 +548,7 @@
 
             <!--/ Basic Bootstrap Table -->
 
-            <hr class="my"
+         
               <!--/ Layout Demo -->
             </div>
             <!-- / Content -->

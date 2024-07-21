@@ -121,7 +121,7 @@
               <div data-i18n="Dashboards">Masters</div>
             </a>
             <ul class="menu-sub">
-              <li class="menu-item active">
+              <li class="menu-item">
                 <a href="user-master.html" class="menu-link">
                   <div data-i18n="Analytics">User Master</div>
                 </a>
@@ -136,7 +136,7 @@
                   <div data-i18n="Analytics">Category Master</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="role-master.html" class="menu-link">
                   <div data-i18n="Analytics">Role Master</div>
                 </a>
@@ -322,233 +322,9 @@
             <!-- Content -->
 
             <div class="container-fluid flex-grow-1 container-p-y">
-              <!-- Layout Demo -->
-
-
-<!--Main content starts from here-->   
- 
-
-<!-- <div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4>User master</h4>
-  <button type="button" class="btn btn-success">User</button>
-</div> -->
-
-
-<div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4 class="m-0">User Master</h4>
-  <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#modalCenter">
-    User
-  </button>
-</div>
-
-<div class="col-lg-4 col-md-6">
-  <div class="mt-3">
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalCenterTitle">User Details</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"></button>
-          </div>
-          <form>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col mb-3">
-                <label for="userId" class="form-label">User Id</label>
-                <input
-                  type="text"
-                  id="userId"
-                  class="form-control"
-                  placeholder="Enter User Id" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <input
-                  type="text"
-                  id="fullName"
-                  class="form-control"
-                  placeholder="Enter Full Name" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="emailId" class="form-label">Email Id</label>
-                <input
-                  type="email"
-                  id="emailId"
-                  class="form-control"
-                  placeholder="xxxx@xxx.xx" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="mobileNumber" class="form-label">Mobile Number</label>
-                <input
-                  type="text"
-                  id="mobileNumber"
-                  class="form-control"
-                  placeholder="Enter Mobile Number" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="address" class="form-label">Address</label>
-                <input
-                  type="text"
-                  id="address"
-                  class="form-control"
-                  placeholder="Enter Address" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="defaultSelect" class="form-label">Role</label>
-                <select id="defaultSelect" class="form-select">
-                  <option disabled selected>Select Role</option>
-                  <option value="1">Admin</option>
-                  <option value="2">User</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="defaultSelect" class="form-label">Status</label>
-                <select id="defaultSelect" class="form-select">
-                  <option disabled selected>Select Status</option>
-                  <option value="1">Active</option>
-                  <option value="2">Inactive</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button type="submit" class="btn btn-primary">Add Changes</button>
-          </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-<!-- Table starts from here -->
-<div class="card">
-  <h5 class="card-header">Users Information</h5>
-  <div class="table-responsive text-nowrap">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="text-center">Sr No</th>
-          <th class="text-center">User Id</th>
-          <th class="text-center">Full Name</th>
-          <th class="text-center">Email Id</th>
-          <th class="text-center">Mobile Number</th>
-          <th class="text-center">Actions</th>
-        </tr>
-      </thead>
-      <tbody class="table-border-bottom-0">
-        <tr>
-          <td class="text-center">1</td>
-          <td class="text-center">0121</td>
-          <td class="text-center">Jasica Thompson</td>
-          <td class="text-center">jasica@gmail.com</td>
-          <td class="text-center">+1 234 567 8901</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center">2</td>
-          <td class="text-center">0122</td>
-          <td class="text-center">John Smith</td>
-          <td class="text-center">john@gmail.com</td>
-          <td class="text-center">+1 234 567 8902</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center">3</td>
-          <td class="text-center">0123</td>
-          <td class="text-center">Jason Williams</td>
-          <td class="text-center">jason@gmail.com</td>
-          <td class="text-center">+1 234 567 8903</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td class="text-center">4</td>
-          <td class="text-center">0124</td>
-          <td class="text-center">Mona Brown</td>
-          <td class="text-center">mona@gmail.com</td>
-          <td class="text-center">+1 234 567 8904</td>
-          <td class="text-center">
-            <div class="dropdown">
-              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                <i class="bx bx-dots-vertical-rounded"></i>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-
-
-            <!--/ Basic Bootstrap Table -->
-
-            <hr class="my"
-              <!--/ Layout Demo -->
+              <!-- main content here -->
+             <h1>Role Master content here...</h1>
+              <!--/ main content ends here -->
             </div>
             <!-- / Content -->
 

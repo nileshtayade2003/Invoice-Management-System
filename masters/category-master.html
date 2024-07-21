@@ -5,7 +5,7 @@
   class="light-style layout-menu-fixed layout-wide"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="./assets/"
+  data-assets-path="../assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Dashboard Sitesoch</title>
+    <title>Category Master</title>
 
     <meta name="description" content="" />
 
@@ -23,7 +23,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="./assets/img/favicon/favicon.ico"
+      href="../assets/img/favicon/favicon.ico"
     />
 
     <!-- Fonts -->
@@ -34,7 +34,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -46,29 +46,29 @@
     <!-- Core CSS -->
     <link
       rel="stylesheet"
-      href="./assets/vendor/css/core.css"
+      href="../assets/vendor/css/core.css"
       class="template-customizer-core-css"
     />
     <link
       rel="stylesheet"
-      href="./assets/vendor/css/theme-default.css"
+      href="../assets/vendor/css/theme-default.css"
       class="template-customizer-theme-css"
     />
-    <link rel="stylesheet" href="./assets/css/demo.css" />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
 
     <!-- Vendors CSS -->
     <link
       rel="stylesheet"
-      href="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
     />
 
     <!-- Page CSS -->
 
     <!-- Helpers -->
-    <script src="./assets/vendor/js/helpers.js"></script>
+    <script src="../assets/vendor/js/helpers.js"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-    <script src="./assets/js/config.js"></script>
+    <script src="../assets/js/config.js"></script>
   </head>
 
   <body>
@@ -114,7 +114,7 @@
           </li>
 
           <!-- Masters -->
-          <li class="menu-item">
+          <li class="menu-item active">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
               <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
               <i class="menu-icon tf-icons bx bxs-edit"></i>
@@ -131,7 +131,7 @@
                   <div data-i18n="Analytics">Organization Master</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="category-master.html" class="menu-link">
                   <div data-i18n="Analytics">Category Master</div>
                 </a>
@@ -163,7 +163,7 @@
               </li>
             </ul>
           </li>
-
+          
           <!-- Quote Management -->
           <li class="menu-item">
             <a href="../quote-management/quote-management.html" class="menu-link">
@@ -258,7 +258,7 @@
                   >
                     <div class="avatar avatar-online">
                       <img
-                        src="./assets/img/avatars/1.png"
+                        src="../assets/img/avatars/1.png"
                         alt
                         class="w-px-40 h-auto rounded-circle"
                       />
@@ -271,7 +271,7 @@
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
                               <img
-                                src="./assets/img/avatars/1.png"
+                                src="../assets/img/avatars/1.png"
                                 alt
                                 class="w-px-40 h-auto rounded-circle"
                               />
@@ -323,7 +323,208 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <!-- Layout Demo -->
-             content
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-between align-items-center py-3 mb-4">
+                        <h4 class="m-0">Category Master</h4>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start py-3 mb-4">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalCenter">
+                            Add Category
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+               <!-- Vertically Centered Modal -->
+               <div class="col-lg-4 col-md-6">
+                
+                <div class="mt-3">
+                  <!-- Button trigger modal -->
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalCenterTitle">Add Category Details</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <form action="">
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col mb-3">
+                                <label for="nameWithTitle" class="form-label">Category id</label>
+                                <input
+                                  type="text"
+                                  id="nameWithTitle"
+                                  class="form-control"
+                                  placeholder="Enter ID" required />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col mb-3">
+                                <label for="nameWithTitle" class="form-label">Category Name</label>
+                                <input
+                                  type="text"
+                                  id="nameWithTitle"
+                                  class="form-control"
+                                  placeholder="Enter Name" required />
+                              </div>
+                            </div>
+                            
+                            <div class="row">
+                              <div class="col mb-3">
+                                  <label for="clientStatus" class="form-label">Status</label>
+                                  <select id="clientStatus" class="form-select form-control" required>
+                                    <!-- <option disabled selected>Select Status</option> -->
+                                    <option value="1">Active</option>
+                                    <option value="2">Inactive</option>
+                                  </select>
+                              </div>
+                          </div>
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                              Cancel
+                            </button>
+                            <button type="submit" class="btn btn-primary">Add Changes</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            
+                
+                <!-- Table Section -->
+               <!-- Basic Bootstrap Table -->
+              <div class="card">
+                <h5 class="card-header">Category Details</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>SR. NO.</th>
+                        <th>CATEGORY ID</th>
+                        <th>CATEGORY NAME</th>
+                        <th>ACTIONS</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <!-- first row data -->
+                      <tr>
+                        <td>1</td>
+                        <td>
+                           201
+                        </td>
+                        <td>
+                           <span class="fw-medium">Vedika Patil</span>
+                        </td>
+                        
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <!-- second row data -->
+                      <tr>
+                        <td>2</td>
+                        <td>
+                           202
+                        </td>
+                        <td>
+                           <span class="fw-medium">Nilesh Tayade</span>
+                        </td>
+                        
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>3</td>
+                        <td>203</td>
+                        <td><span class="fw-medium">Darshit Puranik</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-edit-alt me-1"></i> Edit
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>204</td>
+                        <td><span class="fw-medium">Kamesh Surwade</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-edit-alt me-1"></i> Edit
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div>
               <!--/ Layout Demo -->
             </div>
             <!-- / Content -->
@@ -380,18 +581,18 @@
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
 
-    <script src="./assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="./assets/vendor/libs/popper/popper.js"></script>
-    <script src="./assets/vendor/js/bootstrap.js"></script>
-    <script src="./assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="./assets/vendor/js/menu.js"></script>
+    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="../assets/vendor/libs/popper/popper.js"></script>
+    <script src="../assets/vendor/js/bootstrap.js"></script>
+    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="../assets/vendor/js/menu.js"></script>
 
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="./assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
 

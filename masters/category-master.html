@@ -163,7 +163,7 @@
               </li>
             </ul>
           </li>
-
+          
           <!-- Quote Management -->
           <li class="menu-item">
             <a href="../quote-management/quote-management.html" class="menu-link">
@@ -323,174 +323,208 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <!-- Layout Demo -->
-
-
-<!--Main content starts from here-->   
- 
-
-<div class="d-flex align-items-center justify-content-between py-3 mb-4">
-  <h4 class="m-0">Category Master</h4>
-  <button
-    type="button"
-    class="btn btn-primary"
-    data-bs-toggle="modal"
-    data-bs-target="#modalCenter">
-    Category
-  </button>
-</div>
-
-<div class="col-lg-4 col-md-6">
-  <div class="mt-3">
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalCenterTitle">Category Details</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col mb-3">
-                <label for="userId" class="form-label">Category Id</label>
-                <input
-                  type="text"
-                  id="CategoryId"
-                  class="form-control"
-                  placeholder="Enter Category Id" />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col mb-3">
-                <label for="fullName" class="form-label">Category Name</label>
-                <input
-                  type="text"
-                  id="CategoryName"
-                  class="form-control"
-                  placeholder="Enter Category Name" />
-              </div>
+              <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex justify-content-between align-items-center py-3 mb-4">
+                        <h4 class="m-0">Category Master</h4>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start py-3 mb-4">
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modalCenter">
+                            Add Category
+                        </button>
+                    </div>
+                </div>
             </div>
             
-            <div class="row">
-                <div class="col mb-3">
-                  <label for="status" class="form-label">Status</label>
-                  <select id="status" class="form-control">
-                    <option value="active">Active</option>
-                    <option value="inactive">Inactive</option>
-                  </select>
+            
+
+               <!-- Vertically Centered Modal -->
+               <div class="col-lg-4 col-md-6">
+                
+                <div class="mt-3">
+                  <!-- Button trigger modal -->
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="modalCenterTitle">Add Category Details</h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                        </div>
+                        <form action="">
+                          <div class="modal-body">
+                            <div class="row">
+                              <div class="col mb-3">
+                                <label for="nameWithTitle" class="form-label">Category id</label>
+                                <input
+                                  type="text"
+                                  id="nameWithTitle"
+                                  class="form-control"
+                                  placeholder="Enter ID" required />
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col mb-3">
+                                <label for="nameWithTitle" class="form-label">Category Name</label>
+                                <input
+                                  type="text"
+                                  id="nameWithTitle"
+                                  class="form-control"
+                                  placeholder="Enter Name" required />
+                              </div>
+                            </div>
+                            
+                            <div class="row">
+                              <div class="col mb-3">
+                                  <label for="clientStatus" class="form-label">Status</label>
+                                  <select id="clientStatus" class="form-select form-control" required>
+                                    <!-- <option disabled selected>Select Status</option> -->
+                                    <option value="1">Active</option>
+                                    <option value="2">Inactive</option>
+                                  </select>
+                              </div>
+                          </div>
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                              Cancel
+                            </button>
+                            <button type="submit" class="btn btn-primary">Add Changes</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-              Cancel
-            </button>
-            <button type="button" class="btn btn-primary">Add Changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
+            
+                
+                <!-- Table Section -->
+               <!-- Basic Bootstrap Table -->
+              <div class="card">
+                <h5 class="card-header">Category Details</h5>
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>SR. NO.</th>
+                        <th>CATEGORY ID</th>
+                        <th>CATEGORY NAME</th>
+                        <th>ACTIONS</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                      <!-- first row data -->
+                      <tr>
+                        <td>1</td>
+                        <td>
+                           201
+                        </td>
+                        <td>
+                           <span class="fw-medium">Vedika Patil</span>
+                        </td>
+                        
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
 
-
-
-<!-- Table starts from here -->
-<div class="card">
-    <h5 class="card-header">Users Information</h5>
-    <div class="table-responsive text-nowrap">
-      <table class="table">
-        <thead>
-          <tr>
-            <th class="text-center">Sr No</th>
-            <th class="text-center">Category Id</th>
-            <th class="text-center">Category Name</th>
-            <th class="text-center">Actions</th>
-          </tr>
-        </thead>
-        <tbody class="table-border-bottom-0">
-          <tr>
-            <td class="text-center">1</td>
-            <td class="text-center">101</td>
-            <td class="text-center">InnovateTech Solutions</td>
-            <td class="text-center">
-              <div class="dropdown">
-                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                  <i class="bx bx-dots-vertical-rounded"></i>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-1"></i> Edit</a>
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-1"></i> Delete</a>
+                      <!-- second row data -->
+                      <tr>
+                        <td>2</td>
+                        <td>
+                           202
+                        </td>
+                        <td>
+                           <span class="fw-medium">Nilesh Tayade</span>
+                        </td>
+                        
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                     
+                      <tr>
+                        <td>3</td>
+                        <td>203</td>
+                        <td><span class="fw-medium">Darshit Puranik</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-edit-alt me-1"></i> Edit
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>204</td>
+                        <td><span class="fw-medium">Kamesh Surwade</span></td>
+                        <td>
+                            <div class="dropdown">
+                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                    <i class="bx bx-dots-vertical-rounded"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-edit-alt me-1"></i> Edit
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <i class="bx bx-trash me-1"></i> Delete
+                                    </a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                     
+                    </tbody>
+                  </table>
                 </div>
               </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-center">2</td>
-            <td class="text-center">102</td>
-            <td class="text-center">Global Ventures Ltd.</td>
-            <td class="text-center">
-              <div class="dropdown">
-                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                  <i class="bx bx-dots-vertical-rounded"></i>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-center">3</td>
-            <td class="text-center">103</td>
-            <td class="text-center">Pioneer Enterprises</td>
-            <td class="text-center">
-              <div class="dropdown">
-                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                  <i class="bx bx-dots-vertical-rounded"></i>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-center">4</td>
-            <td class="text-center">104</td>
-            <td class="text-center">Synergy Dynamics Inc.</td>
-            <td class="text-center">
-              <div class="dropdown">
-                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                  <i class="bx bx-dots-vertical-rounded"></i>
-                </button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-edit-alt me-2"></i> Edit</a>
-                  <a class="dropdown-item" href="javascript:void(0);"><i class="bx bx-trash me-2"></i> Delete</a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  
-  
-
-
-
-            <!--/ Basic Bootstrap Table -->
-
-            <hr class="my
               <!--/ Layout Demo -->
             </div>
             <!-- / Content -->

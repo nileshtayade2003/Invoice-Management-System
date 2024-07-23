@@ -317,16 +317,251 @@
 
           <!-- / Navbar -->
 
-          <!-- Content wrapper -->
-          <div class="content-wrapper">
-            <!-- Content -->
+         <!-- Content wrapper -->
+         <div class="content-wrapper">
+          <!-- Content -->
 
-            <div class="container-fluid flex-grow-1 container-p-y">
-              <!-- main content here -->
-             <h1>Role Master content here...</h1>
-              <!--/ main content ends here -->
+          <div class="container-fluid flex-grow-1 container-p-y">
+            <!-- Layout Demo -->
+            <div class="container">
+              <div class="row">
+                  <div class="col-12 col-md-6 d-flex justify-content-between align-items-center py-3 mb-4">
+                      <h4 class="m-0">Role Master</h4>
+                  </div>
+                  <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start py-3 mb-4">
+                      <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalCenter">
+                          Add Role
+                      </button>
+                  </div>
+              </div>
+          </div>
+          
+          
+
+             <!-- Vertically Centered Modal -->
+             <div class="col-lg-4 col-md-6">
+              
+              <div class="mt-3">
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <form action="">
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col mb-3">
+                              <label for="nameWithTitle" class="form-label">Role id</label>
+                              <input
+                                type="text"
+                                id="nameWithTitle"
+                                class="form-control"
+                                placeholder="Enter Role ID" required />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col mb-3">
+                              <label for="nameWithTitle" class="form-label">Role Name</label>
+                              <input
+                                type="text"
+                                id="nameWithTitle"
+                                class="form-control"
+                                placeholder="Enter Role Name" required />
+                            </div>
+                          </div>
+                          
+                          <table >
+                             <tbody>
+                                <tr>
+                                   <div class="row g-2">
+                                        <div class="col mb-0">
+                                          <label for="nameWithTitle" class="form-label">SR NO</label>
+                                          <input
+                                            type="text"
+                                            id="nameWithTitle"
+                                            class="form-control"
+                                            placeholder="Enter Sr No" required />
+                                        </div>
+                                        <div class="col mb-0">
+                                          <label for="nameWithTitle" class="form-label">Module</label>
+                                          <input
+                                            type="text"
+                                            id="nameWithTitle"
+                                            class="form-control"
+                                            placeholder="Enter Module" required />
+                                        </div>
+                                      </div>
+                                     </tr>
+                                  <tr>
+                                    <div class="row g-2">
+                                      <div class="col mb-0">
+                                        <label for="nameWithTitle" class="form-label">Sub Module</label>
+                                        <input
+                                          type="text"
+                                          id="nameWithTitle"
+                                          class="form-control"
+                                          placeholder="Enter Sub Module" required />
+                                      </div>
+                                      <div class="col mb-0">
+                                        <label for="nameWithTitle" class="form-label">Action</label>
+                                        <input
+                                          type="text"
+                                          id="nameWithTitle"
+                                          class="form-control"
+                                          placeholder="Enter Action" required />
+                                      </div>
+                                    </div>
+                              </tr>
+                            </tbody>
+                        </table>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Cancel
+                          </button>
+                          <button type="submit" class="btn btn-primary">Add Changes</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- / Content -->
+
+          
+              
+              <!-- Table Section -->
+             <!-- Basic Bootstrap Table -->
+            <div class="card">
+              <h5 class="card-header">Role Details</h5>
+              <div class="table-responsive text-nowrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>SR. NO.</th>
+                      <th>ROLE ID</th>
+                      <th>ROLE NAME</th>
+                      <th>ACTIONS</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-border-bottom-0">
+                    <!-- first row data -->
+                    <tr>
+                      <td>1</td>
+                      <td>
+                         201
+                      </td>
+                      <td>
+                         <span class="fw-medium">Vedika Patil</span>
+                      </td>
+                      
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-trash me-1"></i> Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <!-- second row data -->
+                    <tr>
+                      <td>2</td>
+                      <td>
+                         202
+                      </td>
+                      <td>
+                         <span class="fw-medium">Nilesh Tayade</span>
+                      </td>
+                      
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                            <i class="bx bx-dots-vertical-rounded"></i>
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                            >
+                            <a class="dropdown-item" href="javascript:void(0);"
+                              ><i class="bx bx-trash me-1"></i> Delete</a
+                            >
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                   
+                    <tr>
+                      <td>3</td>
+                      <td>203</td>
+                      <td><span class="fw-medium">Darshit Puranik</span></td>
+                      <td>
+                          <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                      <i class="bx bx-edit-alt me-1"></i> Edit
+                                  </a>
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                      <i class="bx bx-trash me-1"></i> Delete
+                                  </a>
+                              </div>
+                          </div>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>204</td>
+                      <td><span class="fw-medium">Kamesh Surwade</span></td>
+                      <td>
+                          <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                  <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                      <i class="bx bx-edit-alt me-1"></i> Edit
+                                  </a>
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                      <i class="bx bx-trash me-1"></i> Delete
+                                  </a>
+                              </div>
+                          </div>
+                      </td>
+                  </tr>
+                  
+                   
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--/ Layout Demo -->
+          </div>
+          <!-- / Content -->
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">

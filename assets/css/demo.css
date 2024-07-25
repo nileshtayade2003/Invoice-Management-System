@@ -124,6 +124,13 @@
 }
 
 
+/* common styles */
+
+#datatable th,#datatable td{
+    text-align:start;
+}
+           
+
 /* index page styles */
 /* sidebar style */
 

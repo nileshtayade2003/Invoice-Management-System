@@ -706,10 +706,12 @@ div.dt-container div.dt-layout-full {
   width: 100%
 }
 
-div.dt-container div.dt-layout-full>*:only-child {
+div.dt-container div.dt-layout-full > *:only-child {
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  border: 1px solid gray; 
 }
+
 
 div.dt-container div.dt-layout-table>div {
   display: block !important

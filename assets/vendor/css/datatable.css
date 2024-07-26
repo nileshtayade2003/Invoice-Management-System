@@ -659,12 +659,12 @@ div.dt-container div.dt-layout-row div.dt-layout-cell {
 
 div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-start {
   justify-content: flex-start;
-  margin-right: auto
+  margin-left: 27px;
 }
 
 div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
   justify-content: flex-end;
-  margin-left: auto
+  margin-right: 27px;
 }
 
 div.dt-container div.dt-layout-row div.dt-layout-cell:empty {
@@ -746,11 +746,14 @@ div.dt-container .dt-input {
   border-radius: 3px;
   padding: 5px;
   background-color: transparent;
-  color: inherit
+  color: inherit;
+  outline-color: #696cff;
 }
 
 div.dt-container select.dt-input {
-  padding: 4px
+  padding: 5px;
+  margin-right: 7px;
+  outline-color: #696cff;
 }
 
 div.dt-container .dt-paging .dt-paging-button {
@@ -834,6 +837,10 @@ div.dt-container .dt-info,
 div.dt-container .dt-processing,
 div.dt-container .dt-paging {
   color: inherit
+}
+
+.dt-search label{
+  margin-right: 7px;
 }
 
 div.dt-container .dataTables_scroll {

@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Category Master</title>
+    <title>Sitesoch | Category master</title>
 
     <meta name="description" content="" />
 
@@ -131,7 +131,7 @@
                   <div data-i18n="Analytics">Organization Master</div>
                 </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item">
                 <a href="category-master.html" class="menu-link">
                   <div data-i18n="Analytics">Category Master</div>
                 </a>
@@ -146,7 +146,7 @@
                   <div data-i18n="Analytics">Client Master</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="tax-master.html" class="menu-link">
                   <div data-i18n="Analytics">Tax Master</div>
                 </a>
@@ -182,7 +182,7 @@
               <div data-i18n="invoice">Invoice Management</div>
             </a>
           </li>
-         
+        
         </ul>
       </aside>
         <!-- / Menu -->
@@ -226,7 +226,8 @@
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-               
+              
+
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a
@@ -301,207 +302,309 @@
 
             <div class="container-fluid flex-grow-1 container-p-y">
               <!-- Layout Demo -->
-              <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-6 d-flex justify-content-between align-items-center py-3 mb-4">
-                        <h4 class="m-0">Category Master</h4>
-                    </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start py-3 mb-4">
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-bs-toggle="modal"
-                            data-bs-target="#modalCenter">
-                            Add Category
-                        </button>
-                    </div>
+
+              <!-- heading -->
+              <div class="row">
+                <div class="col-12 col-md-6 d-flex justify-content-start align-items-center py-3 mb-4">
+                    <h4 class="m-0">Category Master</h4>
                 </div>
-            </div>
-            
-            
+              </div>
 
-               <!-- Vertically Centered Modal -->
-               <div class="col-lg-4 col-md-6">
-                
-                <div class="mt-3">
-                  <!-- Button trigger modal -->
-
-                  <!-- Modal -->
-                  <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="modalCenterTitle">Add Category Details</h5>
-                          <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"></button>
+              <!-- cards section  -->
+              <div class="row g-6 mb-6">
+                <div class="col-sm-6 col-xl-3 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span class="text-heading">Session</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">21,459</h4>
+                            <p class="text-success mb-0">(+29%)</p>
+                          </div>
+                          <small class="mb-0">Total Users</small>
                         </div>
-                        <form action="">
-                          <div class="modal-body">
-                            <div class="row">
-                              <div class="col mb-3">
-                                <label for="nameWithTitle" class="form-label">Category id</label>
-                                <input
-                                  type="text"
-                                  id="nameWithTitle"
-                                  class="form-control"
-                                  placeholder="Enter ID" required />
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="col mb-3">
-                                <label for="nameWithTitle" class="form-label">Category Name</label>
-                                <input
-                                  type="text"
-                                  id="nameWithTitle"
-                                  class="form-control"
-                                  placeholder="Enter Name" required />
-                              </div>
-                            </div> 
-                            
-                            <div class="row">
-                              <div class="col mb-3">
-                                  <label for="clientStatus" class="form-label">Status</label>
-                                  <select id="clientStatus" class="form-select form-control" required>
-                                    <!-- <option disabled selected>Select Status</option> -->
-                                    <option value="1">Active</option>
-                                    <option value="2">Inactive</option>
-                                  </select>
-                              </div>
+                        <div class="avatar">
+                          <span class="avatar-initial rounded bg-label-primary">
+                            <i class="bx bx-group bx-sm"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span class="text-heading">Paid Users</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">4,567</h4>
+                            <p class="text-success mb-0">(+18%)</p>
                           </div>
-                            
+                          <small class="mb-0">Last week analytics</small>
+                        </div>
+                        <div class="avatar">
+                          <span class="avatar-initial rounded bg-label-danger">
+                            <i class="bx bx-user-plus bx-sm"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span class="text-heading">Active Users</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">19,860</h4>
+                            <p class="text-danger mb-0">(-14%)</p>
                           </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                              Cancel
-                            </button>
-                            <button type="submit" class="btn btn-primary">Add Changes</button>
+                          <small class="mb-0">Last week analytics</small>
+                        </div>
+                        <div class="avatar">
+                          <span class="avatar-initial rounded bg-label-success">
+                            <i class="bx bx-user-check bx-sm"></i>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-xl-3 mb-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="d-flex align-items-start justify-content-between">
+                        <div class="content-left">
+                          <span class="text-heading">Pending Users</span>
+                          <div class="d-flex align-items-center my-1">
+                            <h4 class="mb-0 me-2">237</h4>
+                            <p class="text-success mb-0">(+42%)</p>
                           </div>
-                        </form>
+                          <small class="mb-0">Last week analytics</small>
+                        </div>
+                        <div class="avatar">
+                          <span class="avatar-initial rounded bg-label-warning">
+                            <i class="bx bx-user-voice bx-sm"></i>
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
+              <!-- cards section ends -->
             
-                
+
+               
+              
                 <!-- Table Section -->
                <!-- Basic Bootstrap Table -->
-              <div class="card">
-                <h5 class="card-header">Category Details</h5>
-                <div class="table-responsive text-nowrap">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>SR. NO.</th>
-                        <th>CATEGORY ID</th>
-                        <th>CATEGORY NAME</th>
-                        <th>ACTIONS</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <!-- first row data -->
-                      <tr>
-                        <td>1</td>
-                        <td>
-                           201
-                        </td>
-                        <td>
-                           <span class="fw-medium">Vedika Patil</span>
-                        </td>
-                        
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
+              <div class="card p-3">
+                <!-- <h5 class="card-header">Tax Details</h5> -->
+                  <!-- table header -->
+                  <div class="card-header border-bottom mb-3">
+                    <div class="d-flex align-items-center justify-content-between">
+                     <h5 class="card-title mb-0">Search Filters</h5>
+                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd"
+                     aria-controls="offcanvasEnd">
+                     <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
+                       Add Category
+                   </button>
+                    </div>
+                     <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
+                       <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
+                           <option value=""> Select Role </option>
+                           <option value="Admin">Admin</option>
+                           <option value="Author">Author</option>
+                           <option value="Editor">Editor</option>
+                           <option value="Maintainer">Maintainer</option>
+                           <option value="Subscriber">Subscriber</option>
+                         </select></div>
+                       <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
+                           <option value=""> Select Plan </option>
+                           <option value="Basic">Basic</option>
+                           <option value="Company">Company</option>
+                           <option value="Enterprise">Enterprise</option>
+                           <option value="Team">Team</option>
+                         </select></div>
+                       <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
+                           <option value=""> Select Status </option>
+                           <option value="Pending" class="text-capitalize">Pending</option>
+                           <option value="Active" class="text-capitalize">Active</option>
+                           <option value="Inactive" class="text-capitalize">Inactive</option>
+                         </select></div>
+                     </div>
+                   </div>
+                   <!-- /table header -->
 
-                      <!-- second row data -->
-                      <tr>
-                        <td>2</td>
-                        <td>
-                           202
-                        </td>
-                        <td>
-                           <span class="fw-medium">Nilesh Tayade</span>
-                        </td>
-                        
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
+                   <div class="table-responsive text-nowrap">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>SR. NO.</th>
+                          <th>CATEGORY ID</th>
+                          <th>CATEGORY NAME</th>
+                          <th>ACTIONS</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-border-bottom-0">
+                        <!-- first row data -->
+                        <tr>
+                          <td>1</td>
+                          <td>
+                             201
+                          </td>
+                          <td>
+                             <span class="fw-medium">Vedika Patil</span>
+                          </td>
+                          
+                          <td>
+                            <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-trash me-1"></i> Delete</a
+                                >
+                              </div>
                             </div>
-                          </div>
-                        </td>
+                          </td>
+                        </tr>
+  
+                        <!-- second row data -->
+                        <tr>
+                          <td>2</td>
+                          <td>
+                             202
+                          </td>
+                          <td>
+                             <span class="fw-medium">Nilesh Tayade</span>
+                          </td>
+                          
+                          <td>
+                            <div class="dropdown">
+                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                                >
+                                <a class="dropdown-item" href="javascript:void(0);"
+                                  ><i class="bx bx-trash me-1"></i> Delete</a
+                                >
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                       
+                        <tr>
+                          <td>3</td>
+                          <td>203</td>
+                          <td><span class="fw-medium">Darshit Puranik</span></td>
+                          <td>
+                              <div class="dropdown">
+                                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                      <i class="bx bx-dots-vertical-rounded"></i>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="javascript:void(0);">
+                                          <i class="bx bx-edit-alt me-1"></i> Edit
+                                      </a>
+                                      <a class="dropdown-item" href="javascript:void(0);">
+                                          <i class="bx bx-trash me-1"></i> Delete
+                                      </a>
+                                  </div>
+                              </div>
+                          </td>
                       </tr>
-                     
                       <tr>
-                        <td>3</td>
-                        <td>203</td>
-                        <td><span class="fw-medium">Darshit Puranik</span></td>
-                        <td>
-                            <div class="dropdown">
-                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="javascript:void(0);">
-                                        <i class="bx bx-edit-alt me-1"></i> Edit
-                                    </a>
-                                    <a class="dropdown-item" href="javascript:void(0);">
-                                        <i class="bx bx-trash me-1"></i> Delete
-                                    </a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>204</td>
-                        <td><span class="fw-medium">Kamesh Surwade</span></td>
-                        <td>
-                            <div class="dropdown">
-                                <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                    <i class="bx bx-dots-vertical-rounded"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="javascript:void(0);">
-                                        <i class="bx bx-edit-alt me-1"></i> Edit
-                                    </a>
-                                    <a class="dropdown-item" href="javascript:void(0);">
-                                        <i class="bx bx-trash me-1"></i> Delete
-                                    </a>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    
-                     
-                    </tbody>
-                  </table>
+                          <td>4</td>
+                          <td>204</td>
+                          <td><span class="fw-medium">Kamesh Surwade</span></td>
+                          <td>
+                              <div class="dropdown">
+                                  <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                      <i class="bx bx-dots-vertical-rounded"></i>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="javascript:void(0);">
+                                          <i class="bx bx-edit-alt me-1"></i> Edit
+                                      </a>
+                                      <a class="dropdown-item" href="javascript:void(0);">
+                                          <i class="bx bx-trash me-1"></i> Delete
+                                      </a>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                <!-- /table ends -->
+
+                 <!-- offcanvas -->
+                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
+                  <div class="offcanvas-header">
+                    <h5 id="offcanvasEndLabel" class="offcanvas-title">Add Category</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body my-auto mx-0 flex-grow-0">
+                    <!-- form here -->
+                    <form action="">
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label for="nameWithTitle" class="form-label">Category id</label>
+                            <input
+                              type="text"
+                              id="nameWithTitle"
+                              class="form-control"
+                              placeholder="Enter Name of Product" required />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label for="nameWithTitle" class="form-label">Category Name</label>
+                            <input
+                              type="text"
+                              id="nameWithTitle"
+                              class="form-control"
+                              placeholder="Enter Name" required />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                              <label for="clientStatus" class="form-label">Status</label>
+                              <select id="clientStatus" class="form-select form-control" required>
+                                <!-- <option disabled selected>Select Status</option> -->
+                                <option value="1">Active</option>
+                                <option value="2">Inactive</option>
+                              </select>
+                          </div>
+                      </div>
+                        
+                      <div>
+                        <button type="submit" class="btn btn-primary data-submit">Submit</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="offcanvas">
+                          Cancel
+                        </button>
+                      </div>
+                    </form>
+                   
+                  </div>
                 </div>
+                <!-- /offcanvas ends -->
+
+
               </div>
               <!--/ Layout Demo -->
             </div>
@@ -576,5 +679,29 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+     <!-- datatable code includes jquery cdn -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="//cdn.datatables.net/2.1.0/css/dataTables.dataTables.min.css" type="text/css">
+     <script tpe='text/javascript' src="//cdn.datatables.net/2.1.0/js/dataTables.min.js"></script>
+     
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('#datatable').dataTable({
+           /* SCROLLING */
+           // scrollY:true,
+           //scrollCollapse: true,
+           // paging: true,
+           // scrollX: true,
+           // info: true,
+           // dom: 'Bfrtip',
+           // select: true,
+           
+           // to limit records
+           // pageLength: 5,
+           
+           // recordsTotal: 50,
+         });
+       });
+     </script>
   </body>
 </html>

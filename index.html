@@ -376,10 +376,10 @@
             
                 <!-- Table Section -->
                <!-- Basic Bootstrap Table -->
-              <div class="card">
+              <div class="card p-3">
                 <h5 class="card-header">Recent Invoice Details</h5>
                 <div class="table-responsive text-nowrap">
-                  <table class="table">
+                  <table class="table" id="datatable">
                     <thead>
                       <tr>
                         <th>INVOICE NO.</th>
@@ -392,8 +392,8 @@
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td>001</td>
+                      <tr >
+                        <td >001</td>
                         <td>
                           <span class="fw-medium">Nilesh Tayade</span>
                         </td>
@@ -559,5 +559,29 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- datatable code includes jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//cdn.datatables.net/2.1.0/css/dataTables.dataTables.min.css" type="text/css">
+    <script tpe='text/javascript' src="//cdn.datatables.net/2.1.0/js/dataTables.min.js"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#datatable').dataTable({
+          /* SCROLLING */
+          // scrollY:true,
+          //scrollCollapse: true,
+          // paging: true,
+          // scrollX: true,
+          // info: true,
+          // dom: 'Bfrtip',
+          // select: true,
+          // to limit records
+          // pageLength: 5,
+          
+          // recordsTotal: 50,
+        });
+      });
+    </script>
   </body>
 </html>

@@ -15,7 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Sitesoch | Category master</title>
+    <title>Sitesoch | Category Master</title>
 
     <meta name="description" content="" />
 
@@ -131,7 +131,7 @@
                   <div data-i18n="Analytics">Organization Master</div>
                 </a>
               </li>
-              <li class="menu-item">
+              <li class="menu-item active">
                 <a href="category-master.html" class="menu-link">
                   <div data-i18n="Analytics">Category Master</div>
                 </a>
@@ -146,7 +146,7 @@
                   <div data-i18n="Analytics">Client Master</div>
                 </a>
               </li>
-              <li class="menu-item active">
+              <li class="menu-item">
                 <a href="tax-master.html" class="menu-link">
                   <div data-i18n="Analytics">Tax Master</div>
                 </a>
@@ -182,7 +182,7 @@
               <div data-i18n="invoice">Invoice Management</div>
             </a>
           </li>
-        
+         
         </ul>
       </aside>
         <!-- / Menu -->
@@ -226,8 +226,7 @@
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-              
-
+               
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a
@@ -308,6 +307,9 @@
                 <div class="col-12 col-md-6 d-flex justify-content-start align-items-center py-3 mb-4">
                     <h4 class="m-0">Category Master</h4>
                 </div>
+              </div>
+              
+              <div class="container">
               </div>
 
               <!-- cards section  -->
@@ -402,19 +404,17 @@
 
                
               
-                <!-- Table Section -->
-               <!-- Basic Bootstrap Table -->
-              <div class="card p-3">
-                <!-- <h5 class="card-header">Tax Details</h5> -->
-                  <!-- table header -->
-                  <div class="card-header border-bottom mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                     <h5 class="card-title mb-0">Search Filters</h5>
-                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd"
-                     aria-controls="offcanvasEnd">
-                     <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
-                       Add Category
-                   </button>
+                <!-- Table starts from here -->
+                <div class="card p-3">
+                  <!-- <h5 class="card-header">Users Information</h5> -->
+                  <div class="card-header">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h5 class="card-title mb-0">Search Filters</h5>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd"
+                    aria-controls="offcanvasEnd">
+                    <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
+                      Add Category
+                  </button>
                     </div>
                      <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
                        <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
@@ -553,12 +553,16 @@
                 <!-- /table ends -->
 
                  <!-- offcanvas -->
-                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasEndLabel" class="offcanvas-title">Add Category</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body my-auto mx-0 flex-grow-0">
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasEndLabel" class="offcanvas-title">Add User</h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body mx-0 flex-grow-0">
                     <!-- form here -->
                     <form action="">
                         <div class="row">
@@ -610,8 +614,8 @@
             </div>
             <!-- / Content -->
 
-            <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
+             <!-- Footer -->
+             <footer class="content-footer footer bg-footer-theme">
               <div
                 class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column"
               >
@@ -679,29 +683,31 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-     <!-- datatable code includes jquery cdn -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-     <link rel="stylesheet" href="//cdn.datatables.net/2.1.0/css/dataTables.dataTables.min.css" type="text/css">
-     <script tpe='text/javascript' src="//cdn.datatables.net/2.1.0/js/dataTables.min.js"></script>
-     
-     <script type="text/javascript">
-       $(document).ready(function(){
-         $('#datatable').dataTable({
-           /* SCROLLING */
-           // scrollY:true,
-           //scrollCollapse: true,
-           // paging: true,
-           // scrollX: true,
-           // info: true,
-           // dom: 'Bfrtip',
-           // select: true,
-           
-           // to limit records
-           // pageLength: 5,
-           
-           // recordsTotal: 50,
-         });
-       });
-     </script>
+
+    <!-- datatable code includes jquery cdn -->
+    <script src="../assets/vendor/js/jquery.js"></script>
+    <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
+    <!-- datatable css -->
+    <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#datatable').dataTable({
+          /* SCROLLING */
+          // scrollY:true,
+          //scrollCollapse: true,
+          // paging: true,
+          // scrollX: true,
+          // info: true,
+          // dom: 'Bfrtip',
+          // select: true,
+          
+          // to limit records
+          // pageLength: 5,
+          
+          // recordsTotal: 50,
+        });
+      });
+    </script>
   </body>
 </html>

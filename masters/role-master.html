@@ -312,133 +312,56 @@
 
           <div class="container-fluid flex-grow-1 container-p-y">
             <!-- Layout Demo -->
-            <div class="container">
-              <div class="row">
-                  <div class="col-12 col-md-6 d-flex justify-content-between align-items-center py-3 mb-4">
-                      <h4 class="m-0">Role Master</h4>
-                  </div>
-                  <div class="col-12 col-md-6 d-flex justify-content-md-end justify-content-start py-3 mb-4">
-                      <button
-                          type="button"
-                          class="btn btn-primary"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modalCenter">
-                          Add Role
-                      </button>
-                  </div>
-              </div>
-          </div>
-          
-          
-
-             <!-- Vertically Centered Modal -->
-             <div class="col-lg-4 col-md-6">
-              
-              <div class="mt-3">
-                <!-- Button trigger modal -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"></button>
-                      </div>
-                      <form action="">
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col mb-3">
-                              <label for="nameWithTitle" class="form-label">Role id</label>
-                              <input
-                                type="text"
-                                id="nameWithTitle"
-                                class="form-control"
-                                placeholder="Enter Role ID" required />
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col mb-3">
-                              <label for="nameWithTitle" class="form-label">Role Name</label>
-                              <input
-                                type="text"
-                                id="nameWithTitle"
-                                class="form-control"
-                                placeholder="Enter Role Name" required />
-                            </div>
-                          </div>
-                          
-                          <table >
-                             <tbody>
-                                <tr>
-                                   <div class="row g-2">
-                                        <div class="col mb-0">
-                                          <label for="nameWithTitle" class="form-label">SR NO</label>
-                                          <input
-                                            type="text"
-                                            id="nameWithTitle"
-                                            class="form-control"
-                                            placeholder="Enter Sr No" required />
-                                        </div>
-                                        <div class="col mb-0">
-                                          <label for="nameWithTitle" class="form-label">Module</label>
-                                          <input
-                                            type="text"
-                                            id="nameWithTitle"
-                                            class="form-control"
-                                            placeholder="Enter Module" required />
-                                        </div>
-                                      </div>
-                                     </tr>
-                                  <tr>
-                                    <div class="row g-2">
-                                      <div class="col mb-0">
-                                        <label for="nameWithTitle" class="form-label">Sub Module</label>
-                                        <input
-                                          type="text"
-                                          id="nameWithTitle"
-                                          class="form-control"
-                                          placeholder="Enter Sub Module" required />
-                                      </div>
-                                      <div class="col mb-0">
-                                        <label for="nameWithTitle" class="form-label">Action</label>
-                                        <input
-                                          type="text"
-                                          id="nameWithTitle"
-                                          class="form-control"
-                                          placeholder="Enter Action" required />
-                                      </div>
-                                    </div>
-                              </tr>
-                            </tbody>
-                        </table>
-
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                            Cancel
-                          </button>
-                          <button type="submit" class="btn btn-primary">Add Changes</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
+            <!-- heading -->
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-start align-items-center py-3 mb-4">
+                  <h4 class="m-0">Role Master</h4>
               </div>
             </div>
+            
+            <div class="container">
+            </div>
 
-          
+            
+               <!-- Table starts from here -->
+               <div class="card p-3">
+                <!-- <h5 class="card-header">Users Information</h5> -->
+                <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="card-title mb-0">Search Filters</h5>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                  <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
+                    Add Role
+                </button>
+                  </div>
+                   <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
+                     <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
+                         <option value=""> Select Role </option>
+                         <option value="Admin">Admin</option>
+                         <option value="Author">Author</option>
+                         <option value="Editor">Editor</option>
+                         <option value="Maintainer">Maintainer</option>
+                         <option value="Subscriber">Subscriber</option>
+                       </select></div>
+                     <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
+                         <option value=""> Select Plan </option>
+                         <option value="Basic">Basic</option>
+                         <option value="Company">Company</option>
+                         <option value="Enterprise">Enterprise</option>
+                         <option value="Team">Team</option>
+                       </select></div>
+                     <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
+                         <option value=""> Select Status </option>
+                         <option value="Pending" class="text-capitalize">Pending</option>
+                         <option value="Active" class="text-capitalize">Active</option>
+                         <option value="Inactive" class="text-capitalize">Inactive</option>
+                       </select></div>
+                   </div>
+                 </div>
+                 <!-- /table header -->
               
-              <!-- Table Section -->
-             <!-- Basic Bootstrap Table -->
-            <div class="card">
-              <h5 class="card-header">Role Details</h5>
               <div class="table-responsive text-nowrap">
-                <table class="table">
+                <table class="table" id="datatable">
                   <thead>
                     <tr>
                       <th>SR. NO.</th>
@@ -542,11 +465,113 @@
                           </div>
                       </td>
                   </tr>
-                  
-                   
                   </tbody>
                 </table>
               </div>
+
+
+            <!-- Vertically Centered Modal -->
+             <div class="col-lg-4 col-md-6">
+              
+              <div class="mt-3">
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"></button>
+                      </div>
+                      <form action="">
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col mb-3">
+                              <label for="nameWithTitle" class="form-label">Role id</label>
+                              <input
+                                type="text"
+                                id="nameWithTitle"
+                                class="form-control"
+                                placeholder="Enter Role ID" required />
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col mb-3">
+                              <label for="nameWithTitle" class="form-label">Role Name</label>
+                              <input
+                                type="text"
+                                id="nameWithTitle"
+                                class="form-control"
+                                placeholder="Enter Role Name" required />
+                            </div>
+                          </div>
+                          
+                          <table >
+                             <tbody>
+                                <tr>
+                                   <div class="row g-2">
+                                        <div class="col mb-0">
+                                          <label for="nameWithTitle" class="form-label">SR NO</label>
+                                          <input
+                                            type="text"
+                                            id="nameWithTitle"
+                                            class="form-control"
+                                            placeholder="Enter Sr No" required />
+                                        </div>
+                                        <div class="col mb-0">
+                                          <label for="nameWithTitle" class="form-label">Module</label>
+                                          <input
+                                            type="text"
+                                            id="nameWithTitle"
+                                            class="form-control"
+                                            placeholder="Enter Module" required />
+                                        </div>
+                                      </div>
+                                     </tr>
+                                  <tr>
+                                    <div class="row g-2">
+                                      <div class="col mb-0">
+                                        <label for="nameWithTitle" class="form-label">Sub Module</label>
+                                        <input
+                                          type="text"
+                                          id="nameWithTitle"
+                                          class="form-control"
+                                          placeholder="Enter Sub Module" required />
+                                      </div>
+                                      <div class="col mb-0">
+                                        <label for="nameWithTitle" class="form-label">Action</label>
+                                        <input
+                                          type="text"
+                                          id="nameWithTitle"
+                                          class="form-control"
+                                          placeholder="Enter Action" required />
+                                      </div>
+                                    </div>
+                              </tr>
+                            </tbody>
+                        </table>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                            Cancel
+                          </button>
+                          <button type="submit" class="btn btn-primary">Add Changes</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vertically Centered Modal End -->
+
             </div>
             <!--/ Layout Demo -->
           </div>
@@ -621,5 +646,31 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- datatable code includes jquery cdn -->
+    <script src="../assets/vendor/js/jquery.js"></script>
+    <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
+    <!-- datatable css -->
+    <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#datatable').dataTable({
+          /* SCROLLING */
+          // scrollY:true,
+          //scrollCollapse: true,
+          // paging: true,
+          // scrollX: true,
+          // info: true,
+          // dom: 'Bfrtip',
+          // select: true,
+          
+          // to limit records
+          // pageLength: 5,
+          
+          // recordsTotal: 50,
+        });
+      });
+    </script>
   </body>
 </html>

@@ -415,7 +415,7 @@
 <!-- Table starts from here -->
 <div class="card p-3">
   <!-- <h5 class="card-header">Users Information</h5> -->
-  <div class="card-header border-bottom mb-3">
+  <div class="card-header">
    <div class="d-flex align-items-center justify-content-between">
     <h5 class="card-title mb-0">Search Filters</h5>
     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd"
@@ -552,7 +552,7 @@ aria-labelledby="offcanvasEndLabel">
     data-bs-dismiss="offcanvas"
     aria-label="Close"></button>
 </div>
-<div class="offcanvas-body my-auto mx-0 flex-grow-0">
+<div class="offcanvas-body mx-0 flex-grow-0">
   <!-- form here -->
   <form action="">
     <div class="row">
@@ -685,28 +685,30 @@ aria-labelledby="offcanvasEndLabel">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 
     <!-- datatable code includes jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="//cdn.datatables.net/2.1.0/css/dataTables.dataTables.min.css" type="text/css">
-    <script tpe='text/javascript' src="//cdn.datatables.net/2.1.0/js/dataTables.min.js"></script>
-    
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#datatable').dataTable({
-          /* SCROLLING */
-          // scrollY:true,
-          //scrollCollapse: true,
-          // paging: true,
-          // scrollX: true,
-          // info: true,
-          // dom: 'Bfrtip',
-          // select: true,
-          
-          // to limit records
-          // pageLength: 5,
-          
-          // recordsTotal: 50,
-        });
-      });
-    </script>
+     <!-- datatable code includes jquery cdn -->
+     <script src="../assets/vendor/js/jquery.js"></script>
+     <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
+     <!-- datatable css -->
+     <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+     
+     <script type="text/javascript">
+       $(document).ready(function(){
+         $('#datatable').dataTable({
+           /* SCROLLING */
+           // scrollY:true,
+           //scrollCollapse: true,
+           // paging: true,
+           // scrollX: true,
+           // info: true,
+           // dom: 'Bfrtip',
+           // select: true,
+           
+           // to limit records
+           // pageLength: 5,
+           
+           // recordsTotal: 50,
+         });
+       });
+     </script>
   </body>
 </html>

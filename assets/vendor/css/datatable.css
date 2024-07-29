@@ -654,17 +654,16 @@ div.dt-container div.dt-layout-row {
 div.dt-container div.dt-layout-row div.dt-layout-cell {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  padding: 0 1.5rem;
 }
 
 div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-start {
   justify-content: flex-start;
-  margin-left: 27px;
 }
 
 div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
   justify-content: flex-end;
-  margin-right: 27px;
 }
 
 div.dt-container div.dt-layout-row div.dt-layout-cell:empty {

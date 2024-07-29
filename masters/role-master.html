@@ -318,359 +318,542 @@
                   <h4 class="m-0">Role Master</h4>
               </div>
             </div>
-            
-            <div class="container">
-            </div>
-
-            
-               <!-- Table starts from here -->
-               <div class="card p-3">
-                <!-- <h5 class="card-header">Users Information</h5> -->
-                <div class="card-header">
-                <div class="d-flex align-items-center justify-content-between">
-                  <h5 class="card-title mb-0">Search Filters</h5>
-                  <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter">
-                  <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
-                    Add Role
-                </button>
-                  </div>
-                   <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
-                     <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
-                         <option value=""> Select Role </option>
-                         <option value="Admin">Admin</option>
-                         <option value="Author">Author</option>
-                         <option value="Editor">Editor</option>
-                         <option value="Maintainer">Maintainer</option>
-                         <option value="Subscriber">Subscriber</option>
-                       </select></div>
-                     <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
-                         <option value=""> Select Plan </option>
-                         <option value="Basic">Basic</option>
-                         <option value="Company">Company</option>
-                         <option value="Enterprise">Enterprise</option>
-                         <option value="Team">Team</option>
-                       </select></div>
-                     <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
-                         <option value=""> Select Status </option>
-                         <option value="Pending" class="text-capitalize">Pending</option>
-                         <option value="Active" class="text-capitalize">Active</option>
-                         <option value="Inactive" class="text-capitalize">Inactive</option>
-                       </select></div>
-                   </div>
-                 </div>
-                 <!-- /table header -->
-              
-              <div class="table-responsive text-nowrap">
-                <table class="table" id="datatable">
-                  <thead>
-                    <tr>
-                      <th>SR. NO.</th>
-                      <th>ROLE ID</th>
-                      <th>ROLE NAME</th>
-                      <th>ACTIONS</th>
-                    </tr>
-                  </thead>
-                  <tbody class="table-border-bottom-0">
-                    <!-- first row data -->
-                    <tr>
-                      <td>1</td>
-                      <td>
-                         201
-                      </td>
-                      <td>
-                         <span class="fw-medium">Vedika Patil</span>
-                      </td>
-                      
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class="bx bx-dots-vertical-rounded"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                            >
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="bx bx-trash me-1"></i> Delete</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-
-                    <!-- second row data -->
-                    <tr>
-                      <td>2</td>
-                      <td>
-                         202
-                      </td>
-                      <td>
-                         <span class="fw-medium">Nilesh Tayade</span>
-                      </td>
-                      
-                      <td>
-                        <div class="dropdown">
-                          <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                            <i class="bx bx-dots-vertical-rounded"></i>
-                          </button>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                            >
-                            <a class="dropdown-item" href="javascript:void(0);"
-                              ><i class="bx bx-trash me-1"></i> Delete</a
-                            >
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                   
-                    <tr>
-                      <td>3</td>
-                      <td>203</td>
-                      <td><span class="fw-medium">Darshit Puranik</span></td>
-                      <td>
-                          <div class="dropdown">
-                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                  <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                      <i class="bx bx-edit-alt me-1"></i> Edit
-                                  </a>
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                      <i class="bx bx-trash me-1"></i> Delete
-                                  </a>
-                              </div>
-                          </div>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>4</td>
-                      <td>204</td>
-                      <td><span class="fw-medium">Kamesh Surwade</span></td>
-                      <td>
-                          <div class="dropdown">
-                              <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                  <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                      <i class="bx bx-edit-alt me-1"></i> Edit
-                                  </a>
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                      <i class="bx bx-trash me-1"></i> Delete
-                                  </a>
-                              </div>
-                          </div>
-                      </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-
-
-            <!-- Vertically Centered Modal -->
-             <div class="col-lg-4 col-md-6">
-              
-              <div class="mt-3">
-                <!-- Button trigger modal -->
-
-                <!-- Modal -->
-                <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
-                        <button
-                          type="button"
-                          class="btn-close"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"></button>
+          
+            <!-- cards section -->
+            <div class="row g-6">
+              <!-- 1 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 4 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Vinnie Mostowy" data-bs-original-title="Vinnie Mostowy">
+                          <img class="rounded-circle" src="../assets/img/avatars/5.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Allen Rieske" data-bs-original-title="Allen Rieske">
+                          <img class="rounded-circle" src="../assets/img/avatars/12.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Julee Rossignol" data-bs-original-title="Julee Rossignol">
+                          <img class="rounded-circle" src="../assets/img/avatars/6.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kaith D'souza" data-bs-original-title="Kaith D'souza">
+                          <img class="rounded-circle" src="../assets/img/avatars/3.png" alt="Avatar">
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Administrator</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
                       </div>
-                      <form action="">
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col mb-3">
-                              <label for="nameWithTitle" class="form-label">Role id</label>
-                              <input
-                                type="text"
-                                id="nameWithTitle"
-                                class="form-control"
-                                placeholder="Enter Role ID" required />
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col mb-3">
-                              <label for="nameWithTitle" class="form-label">Role Name</label>
-                              <input
-                                type="text"
-                                id="nameWithTitle"
-                                class="form-control"
-                                placeholder="Enter Role Name" required />
-                            </div>
-                          </div>
-                          
-                          <table >
-                             <tbody>
-                                <tr>
-                                   <div class="row g-2">
-                                        <div class="col mb-0">
-                                          <label for="nameWithTitle" class="form-label">SR NO</label>
-                                          <input
-                                            type="text"
-                                            id="nameWithTitle"
-                                            class="form-control"
-                                            placeholder="Enter Sr No" required />
-                                        </div>
-                                        <div class="col mb-0">
-                                          <label for="nameWithTitle" class="form-label">Module</label>
-                                          <input
-                                            type="text"
-                                            id="nameWithTitle"
-                                            class="form-control"
-                                            placeholder="Enter Module" required />
-                                        </div>
-                                      </div>
-                                     </tr>
-                                  <tr>
-                                    <div class="row g-2">
-                                      <div class="col mb-0">
-                                        <label for="nameWithTitle" class="form-label">Sub Module</label>
-                                        <input
-                                          type="text"
-                                          id="nameWithTitle"
-                                          class="form-control"
-                                          placeholder="Enter Sub Module" required />
-                                      </div>
-                                      <div class="col mb-0">
-                                        <label for="nameWithTitle" class="form-label">Action</label>
-                                        <input
-                                          type="text"
-                                          id="nameWithTitle"
-                                          class="form-control"
-                                          placeholder="Enter Action" required />
-                                      </div>
-                                    </div>
-                              </tr>
-                            </tbody>
-                        </table>
-
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                            Cancel
-                          </button>
-                          <button type="submit" class="btn btn-primary">Add Changes</button>
-                        </div>
-                      </form>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Vertically Centered Modal End -->
-
-            </div>
-            <!--/ Layout Demo -->
-          </div>
-          <!-- / Content -->
-
-            <!-- Footer -->
-            <footer class="content-footer footer bg-footer-theme">
-              <div
-                class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column"
-              >
-                <div class="mb-2 mb-md-0">
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  , All rights reserved by
-                  <a
-                    href="https://sitesoch.com"
-                    target="_blank"
-                    class="footer-link fw-medium"
-                    >Sitesoch</a
-                  >
-                </div>
-                <div class="d-none d-lg-inline-block">
-                  <a
-                    href="https://themeselection.com/license/"
-                    class="footer-link me-4"
-                    target="_blank"
-                    >License</a
-                  >
-
-                  <a
-                    href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
-                    target="_blank"
-                    class="footer-link"
-                    >Support</a
-                  >
+              <!-- 2 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 7 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Jimmy Ressula" data-bs-original-title="Jimmy Ressula">
+                          <img class="rounded-circle" src="../assets/img/avatars/4.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="John Doe" data-bs-original-title="John Doe">
+                          <img class="rounded-circle" src="../assets/img/avatars/1.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kristi Lawker" data-bs-original-title="Kristi Lawker">
+                          <img class="rounded-circle" src="../assets/img/avatars/2.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="4 more">+4</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Manager</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </footer>
-            <!-- / Footer -->
 
-            <div class="content-backdrop fade"></div>
+              <!-- 3 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 5 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Andrew Tye" data-bs-original-title="Andrew Tye">
+                          <img class="rounded-circle" src="../assets/img/avatars/6.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Rishi Swaat" data-bs-original-title="Rishi Swaat">
+                          <img class="rounded-circle" src="../assets/img/avatars/9.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Rossie Kim" data-bs-original-title="Rossie Kim">
+                          <img class="rounded-circle" src="../assets/img/avatars/12.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="2 more">+2</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Users</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 3 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kim Karlos" data-bs-original-title="Kim Karlos">
+                          <img class="rounded-circle" src="../assets/img/avatars/3.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Katy Turner" data-bs-original-title="Katy Turner">
+                          <img class="rounded-circle" src="../assets/img/avatars/9.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Peter Adward" data-bs-original-title="Peter Adward">
+                          <img class="rounded-circle" src="../assets/img/avatars/4.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="3 more">+3</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Support</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 2 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kim Merchent" data-bs-original-title="Kim Merchent">
+                          <img class="rounded-circle" src="../assets/img/avatars/10.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Sam D'souza" data-bs-original-title="Sam D'souza">
+                          <img class="rounded-circle" src="../assets/img/avatars/13.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Nurvi Karlos" data-bs-original-title="Nurvi Karlos">
+                          <img class="rounded-circle" src="../assets/img/avatars/5.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="7 more">+7</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Restricted User</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="row h-100">
+                    <div class="col-sm-5">
+                      <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-4 ps-6">
+                        <img src="../assets/img/illustrations/lady-with-laptop-light.png" class="img-fluid" alt="Image" width="120" data-app-light-img="illustrations/lady-with-laptop-light.png" data-app-dark-img="illustrations/lady-with-laptop-dark.png">
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body text-sm-end text-center ps-sm-0">
+                        <button data-bs-toggle="modal" data-bs-target="#modalCenter" class="btn btn-sm btn-primary mb-4 text-nowrap add-new-role"> <i class="bx bx-plus bx-sm me-0 me-sm-2"></i> Add New Role</button>
+                        <p class="mb-0"> Add new role, <br> if it doesn't exist.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- /cards section ends -->
+
+          
+          
+              
+             <!-- Table starts from here -->
+             <div class="card p-3">
+              <!-- <h5 class="card-header">Users Information</h5> -->
+              <div class="card-header">
+              <div class="d-flex align-items-center justify-content-between">
+                <h5 class="card-title mb-0">Search Filters</h5>
+                <!-- <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
+                  Add Role
+              </button> -->
+                </div>
+                 <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
+                   <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
+                       <option value=""> Select Role </option>
+                       <option value="Admin">Admin</option>
+                       <option value="Author">Author</option>
+                       <option value="Editor">Editor</option>
+                       <option value="Maintainer">Maintainer</option>
+                       <option value="Subscriber">Subscriber</option>
+                     </select></div>
+                   <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
+                       <option value=""> Select Plan </option>
+                       <option value="Basic">Basic</option>
+                       <option value="Company">Company</option>
+                       <option value="Enterprise">Enterprise</option>
+                       <option value="Team">Team</option>
+                     </select></div>
+                   <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
+                       <option value=""> Select Status </option>
+                       <option value="Pending" class="text-capitalize">Pending</option>
+                       <option value="Active" class="text-capitalize">Active</option>
+                       <option value="Inactive" class="text-capitalize">Inactive</option>
+                     </select></div>
+                 </div>
+               </div>
+               <!-- /table header -->
+            
+            <div class="table-responsive text-nowrap">
+              <table class="table" id="datatable">
+                <thead>
+                  <tr>
+                    <th>SR. NO.</th>
+                    <th>ROLE ID</th>
+                    <th>ROLE NAME</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                  <!-- first row data -->
+                  <tr>
+                    <td>1</td>
+                    <td>
+                       201
+                    </td>
+                    <td>
+                       <span class="fw-medium">Vedika Patil</span>
+                    </td>
+                    
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- second row data -->
+                  <tr>
+                    <td>2</td>
+                    <td>
+                       202
+                    </td>
+                    <td>
+                       <span class="fw-medium">Nilesh Tayade</span>
+                    </td>
+                    
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                 
+                  <tr>
+                    <td>3</td>
+                    <td>203</td>
+                    <td><span class="fw-medium">Darshit Puranik</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-edit-alt me-1"></i> Edit
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-trash me-1"></i> Delete
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>204</td>
+                    <td><span class="fw-medium">Kamesh Surwade</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-edit-alt me-1"></i> Edit
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-trash me-1"></i> Delete
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          <!-- Vertically Centered Modal -->
+           <div class="col-lg-4 col-md-6">
+            
+            <div class="mt-3">
+              <!-- Button trigger modal -->
+
+              <!-- Modal -->
+              <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <form action="">
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label for="nameWithTitle" class="form-label">Role id</label>
+                            <input
+                              type="text"
+                              id="nameWithTitle"
+                              class="form-control"
+                              placeholder="Enter Role ID" required />
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label for="nameWithTitle" class="form-label">Role Name</label>
+                            <input
+                              type="text"
+                              id="nameWithTitle"
+                              class="form-control"
+                              placeholder="Enter Role Name" required />
+                          </div>
+                        </div>
+                        
+                        <table >
+                           <tbody>
+                              <tr>
+                                 <div class="row g-2">
+                                      <div class="col mb-0">
+                                        <label for="nameWithTitle" class="form-label">SR NO</label>
+                                        <input
+                                          type="text"
+                                          id="nameWithTitle"
+                                          class="form-control"
+                                          placeholder="Enter Sr No" required />
+                                      </div>
+                                      <div class="col mb-0">
+                                        <label for="nameWithTitle" class="form-label">Module</label>
+                                        <input
+                                          type="text"
+                                          id="nameWithTitle"
+                                          class="form-control"
+                                          placeholder="Enter Module" required />
+                                      </div>
+                                    </div>
+                                   </tr>
+                                <tr>
+                                  <div class="row g-2">
+                                    <div class="col mb-0">
+                                      <label for="nameWithTitle" class="form-label">Sub Module</label>
+                                      <input
+                                        type="text"
+                                        id="nameWithTitle"
+                                        class="form-control"
+                                        placeholder="Enter Sub Module" required />
+                                    </div>
+                                    <div class="col mb-0">
+                                      <label for="nameWithTitle" class="form-label">Action</label>
+                                      <input
+                                        type="text"
+                                        id="nameWithTitle"
+                                        class="form-control"
+                                        placeholder="Enter Action" required />
+                                    </div>
+                                  </div>
+                            </tr>
+                          </tbody>
+                      </table>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                          Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary">Add Changes</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- Content wrapper -->
+
+          <!-- Vertically Centered Modal End -->
+
+          </div>
+          <!--/ Layout Demo -->
         </div>
-        <!-- / Layout page -->
+        <!-- / Content -->
+
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div
+              class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column"
+            >
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , All rights reserved by
+                <a
+                  href="https://sitesoch.com"
+                  target="_blank"
+                  class="footer-link fw-medium"
+                  >Sitesoch</a
+                >
+              </div>
+              <div class="d-none d-lg-inline-block">
+                <a
+                  href="https://themeselection.com/license/"
+                  class="footer-link me-4"
+                  target="_blank"
+                  >License</a
+                >
+
+                <a
+                  href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                  target="_blank"
+                  class="footer-link"
+                  >Support</a
+                >
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
       </div>
-
-      <!-- Overlay -->
-      <div class="layout-overlay layout-menu-toggle"></div>
+      <!-- / Layout page -->
     </div>
-    <!-- / Layout wrapper -->
 
-    <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
 
-    <script src="../assets/vendor/libs/jquery/jquery.js"></script>
-    <script src="../assets/vendor/libs/popper/popper.js"></script>
-    <script src="../assets/vendor/js/bootstrap.js"></script>
-    <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="../assets/vendor/js/menu.js"></script>
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
 
-    <!-- endbuild -->
+  <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../assets/vendor/libs/popper/popper.js"></script>
+  <script src="../assets/vendor/js/bootstrap.js"></script>
+  <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="../assets/vendor/js/menu.js"></script>
 
-    <!-- Vendors JS -->
+  <!-- endbuild -->
 
-    <!-- Main JS -->
-    <script src="../assets/js/main.js"></script>
+  <!-- Vendors JS -->
 
-    <!-- Page JS -->
+  <!-- Main JS -->
+  <script src="../assets/js/main.js"></script>
 
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Page JS -->
 
-    <!-- datatable code includes jquery cdn -->
-    <script src="../assets/vendor/js/jquery.js"></script>
-    <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
-    <!-- datatable css -->
-    <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
-    
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#datatable').dataTable({
-          /* SCROLLING */
-          // scrollY:true,
-          //scrollCollapse: true,
-          // paging: true,
-          // scrollX: true,
-          // info: true,
-          // dom: 'Bfrtip',
-          // select: true,
-          
-          // to limit records
-          // pageLength: 5,
-          
-          // recordsTotal: 50,
-        });
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- datatable code includes jquery cdn -->
+  <script src="../assets/vendor/js/jquery.js"></script>
+  <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
+  <!-- datatable css -->
+  <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#datatable').dataTable({
+        /* SCROLLING */
+        // scrollY:true,
+        //scrollCollapse: true,
+        // paging: true,
+        // scrollX: true,
+        // info: true,
+        // dom: 'Bfrtip',
+        // select: true,
+        
+        // to limit records
+        // pageLength: 5,
+        
+        // recordsTotal: 50,
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
 </html>

@@ -653,105 +653,307 @@
             </div>
 
 
-          <!-- Vertically Centered Modal -->
-           <div class="col-lg-4 col-md-6">
-            
-            <div class="mt-3">
-              <!-- Button trigger modal -->
+<!-- Vertically Centered Modal -->
+<div class="col-lg-4 col-md-6">
+  <div class="mt-3">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCenter">
+      Open Modal
+    </button>
 
-              <!-- Modal -->
-              <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
-                      <button
-                        type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                    </div>
-                    <form action="">
-                      <div class="modal-body">
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Role id</label>
-                            <input
-                              type="text"
-                              id="nameWithTitle"
-                              class="form-control"
-                              placeholder="Enter Role ID" required />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="nameWithTitle" class="form-label">Role Name</label>
-                            <input
-                              type="text"
-                              id="nameWithTitle"
-                              class="form-control"
-                              placeholder="Enter Role Name" required />
-                          </div>
-                        </div>
-                        
-                        <table >
-                           <tbody>
-                              <tr>
-                                 <div class="row g-2">
-                                      <div class="col mb-0">
-                                        <label for="nameWithTitle" class="form-label">SR NO</label>
-                                        <input
-                                          type="text"
-                                          id="nameWithTitle"
-                                          class="form-control"
-                                          placeholder="Enter Sr No" required />
-                                      </div>
-                                      <div class="col mb-0">
-                                        <label for="nameWithTitle" class="form-label">Module</label>
-                                        <input
-                                          type="text"
-                                          id="nameWithTitle"
-                                          class="form-control"
-                                          placeholder="Enter Module" required />
-                                      </div>
-                                    </div>
-                                   </tr>
-                                <tr>
-                                  <div class="row g-2">
-                                    <div class="col mb-0">
-                                      <label for="nameWithTitle" class="form-label">Sub Module</label>
-                                      <input
-                                        type="text"
-                                        id="nameWithTitle"
-                                        class="form-control"
-                                        placeholder="Enter Sub Module" required />
-                                    </div>
-                                    <div class="col mb-0">
-                                      <label for="nameWithTitle" class="form-label">Action</label>
-                                      <input
-                                        type="text"
-                                        id="nameWithTitle"
-                                        class="form-control"
-                                        placeholder="Enter Action" required />
-                                    </div>
-                                  </div>
-                            </tr>
-                          </tbody>
-                      </table>
-
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                          Cancel
-                        </button>
-                        <button type="submit" class="btn btn-primary">Add Changes</button>
-                      </div>
-                    </form>
+    <!-- Modal -->
+    <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="">
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Role id</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Role ID" required=""
+                      spellcheck="false" data-ms-editor="true" data-last-active-input="">
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Role Name</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Role Name" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+
+                <div class="row g-2">
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">SR NO</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Sr No" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">Module</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Module" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+                <div class="row g-2">
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">Sub Module</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Sub Module"
+                      required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">Action</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Action" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+                
               </div>
+             
+            <h5 class="mb-2 mt-5">Role Permissions</h5>
+            <!-- Permission table -->
+            <div class="table-responsive">
+              <table class="table table-flush-spacing mb-0">
+                <tbody>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Administrator Access <i class="bx bx-info-circle"
+                        data-toggle="tooltip" data-placement="top" aria-label="Allows a full access to the system"
+                        title="Allows a full access to the system"></i></td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="selectAll">
+                          <label class="form-check-label" for="selectAll">
+                            Select All
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">User Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Content Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="contentManagementRead">
+                          <label class="form-check-label" for="contentManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="contentManagementWrite">
+                          <label class="form-check-label" for="contentManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="contentManagementCreate">
+                          <label class="form-check-label" for="contentManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Organization Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Role Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Client Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Tax Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Product Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Transaction Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Add additional rows as necessary -->
+                </tbody>
+              </table>
             </div>
+            <!-- Permission table -->
+            <div class="mt-3 d-flex justify-content-end gap-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                Cancel
+              </button>
+            </div>
+          </form>
+          
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
           <!-- Vertically Centered Modal End -->
 
@@ -854,6 +1056,19 @@
         // recordsTotal: 50,
       });
     });
+  </script>
+  <!-- JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const selectAllCheckbox = document.getElementById('selectAll');
+    const checkboxes = document.querySelectorAll('.form-check-input:not(#selectAll)');
+  
+    selectAllCheckbox.addEventListener('change', () => {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = selectAllCheckbox.checked;
+      });
+    });
+  });
   </script>
 </body>
 </html>

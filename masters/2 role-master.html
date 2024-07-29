@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-menu-fixed layout-wide"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Dashboard Sitesoch</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/img/favicon/favicon.ico"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/boxicons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Core CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/core.css"
+      class="template-customizer-core-css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/css/theme-default.css"
+      class="template-customizer-theme-css"
+    />
+    <link rel="stylesheet" href="../assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <script src="../assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="../assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+        id="layout-menu"
+        class="layout-menu menu-vertical menu bg-menu-theme"
+      >
+        <div class="app-brand demo">
+          <a href="../" class="app-brand-link">
+            <span class="app-brand-logo demo">
+              <img src="../assets/img/logo/sitesoch.svg" alt="" />
+            </span>
+            <span
+              class="app-brand-text demo menu-text fw-bold ms-2"
+              style="text-transform: capitalize"
+              >Sitesoch</span
+            >
+          </a>
+
+          <a
+            href="javascript:void(0);"
+            class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none"
+          >
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+          </a>
+        </div>
+
+        <div class="menu-inner-shadow"></div>
+
+        <ul class="menu-inner py-3 sidebar-items">
+
+          
+          <li class="menu-item">
+            <a href="../" class="menu-link">
+              <i class="menu-icon tf-icons fa-solid fa-house"></i>
+              <div data-i18n="invoice">Home</div>
+            </a>
+          </li>
+
+          <!-- Masters -->
+          <li class="menu-item active open">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <!-- <i class="menu-icon tf-icons bx bx-home-circle"></i> -->
+              <i class="menu-icon tf-icons bx bxs-edit"></i>
+              <div data-i18n="Dashboards">Masters</div>
+            </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="user-master.html" class="menu-link">
+                  <div data-i18n="Analytics">User Master</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="organisation-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Organization Master</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="category-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Category Master</div>
+                </a>
+              </li>
+              <li class="menu-item active">
+                <a href="role-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Role Master</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="client-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Client Master</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="tax-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Tax Master</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="product-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Product Master</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="transaction-master.html" class="menu-link">
+                  <div data-i18n="Analytics">Transaction Master</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Quote Management -->
+          <li class="menu-item">
+            <a href="../quote-management/quote-management.html" class="menu-link">
+              <!-- <i class="menu-icon tf-icons bx bx-envelope"></i> -->
+
+              <i
+                class="menu-icon tf-icons fa-solid fa-money-check-dollar"
+              ></i>
+              <div data-i18n="quote">Quote Management</div>
+            </a>
+          </li>
+          <!-- Invoice Mangement -->
+          <li class="menu-item">
+            <a href="../invoice-management/invoice-management.html" class="menu-link">
+              <i class="menu-icon tf-icons fa-solid fa-file-invoice"></i>
+              <div data-i18n="invoice">Invoice Management</div>
+            </a>
+          </li>
+        
+        </ul>
+      </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-fluid navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="bx bx-menu bx-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item d-flex align-items-center">
+                  <i class="bx bx-search fs-4 lh-0"></i>
+                  <input
+                    type="text"
+                    class="form-control border-0 shadow-none ps-1 ps-sm-2"
+                    placeholder="Search.."
+                    aria-label="Search.."
+                  />
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Place this tag where you want the button to render. -->
+                <li class="nav-item lh-1 me-3">
+                  <a
+                    class="github-button"
+                    href="https://github.com/themeselection/sneat-html-admin-template-free"
+                    data-icon="octicon-star"
+                    data-size="large"
+                    data-show-count="true"
+                    aria-label="Star themeselection/sneat-html-admin-template-free on GitHub"
+                    >Star</a
+                  >
+                </li>
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                  >
+                    <div class="avatar avatar-online">
+                      <img
+                        src="../assets/img/avatars/1.png"
+                        alt
+                        class="w-px-40 h-auto rounded-circle"
+                      />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img
+                                src="../assets/img/avatars/1.png"
+                                alt
+                                class="w-px-40 h-auto rounded-circle"
+                              />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">John Doe</span>
+                            <small class="text-muted">Admin</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-user me-2"></i>
+                        <span class="align-middle">My Profile</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <i class="bx bx-cog me-2"></i>
+                        <span class="align-middle">Settings</span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);">
+                        <i class="bx bx-power-off me-2"></i>
+                        <span class="align-middle">Log Out</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+         <!-- Content wrapper -->
+         <div class="content-wrapper">
+          <!-- Content -->
+
+          <div class="container-fluid flex-grow-1 container-p-y">
+            <!-- Layout Demo -->
+            <!-- heading -->
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-start align-items-center py-3 mb-4">
+                  <h4 class="m-0">Role Master</h4>
+              </div>
+            </div>
+          
+            <!-- cards section -->
+            <div class="row g-6">
+              <!-- 1 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 4 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Vinnie Mostowy" data-bs-original-title="Vinnie Mostowy">
+                          <img class="rounded-circle" src="../assets/img/avatars/5.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Allen Rieske" data-bs-original-title="Allen Rieske">
+                          <img class="rounded-circle" src="../assets/img/avatars/12.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Julee Rossignol" data-bs-original-title="Julee Rossignol">
+                          <img class="rounded-circle" src="../assets/img/avatars/6.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kaith D'souza" data-bs-original-title="Kaith D'souza">
+                          <img class="rounded-circle" src="../assets/img/avatars/3.png" alt="Avatar">
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Administrator</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 7 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Jimmy Ressula" data-bs-original-title="Jimmy Ressula">
+                          <img class="rounded-circle" src="../assets/img/avatars/4.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="John Doe" data-bs-original-title="John Doe">
+                          <img class="rounded-circle" src="../assets/img/avatars/1.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kristi Lawker" data-bs-original-title="Kristi Lawker">
+                          <img class="rounded-circle" src="../assets/img/avatars/2.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="4 more">+4</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Manager</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 5 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Andrew Tye" data-bs-original-title="Andrew Tye">
+                          <img class="rounded-circle" src="../assets/img/avatars/6.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Rishi Swaat" data-bs-original-title="Rishi Swaat">
+                          <img class="rounded-circle" src="../assets/img/avatars/9.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Rossie Kim" data-bs-original-title="Rossie Kim">
+                          <img class="rounded-circle" src="../assets/img/avatars/12.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="2 more">+2</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Users</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 3 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kim Karlos" data-bs-original-title="Kim Karlos">
+                          <img class="rounded-circle" src="../assets/img/avatars/3.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Katy Turner" data-bs-original-title="Katy Turner">
+                          <img class="rounded-circle" src="../assets/img/avatars/9.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Peter Adward" data-bs-original-title="Peter Adward">
+                          <img class="rounded-circle" src="../assets/img/avatars/4.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="3 more">+3</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Support</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <h6 class="fw-normal mb-0 text-body">Total 2 users</h6>
+                      <ul class="list-unstyled d-flex align-items-center avatar-group mb-0">
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Kim Merchent" data-bs-original-title="Kim Merchent">
+                          <img class="rounded-circle" src="../assets/img/avatars/10.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Sam D'souza" data-bs-original-title="Sam D'souza">
+                          <img class="rounded-circle" src="../assets/img/avatars/13.png" alt="Avatar">
+                        </li>
+                        <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar pull-up" aria-label="Nurvi Karlos" data-bs-original-title="Nurvi Karlos">
+                          <img class="rounded-circle" src="../assets/img/avatars/5.png" alt="Avatar">
+                        </li>
+                        <li class="avatar">
+                          <span class="avatar-initial rounded-circle pull-up" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="7 more">+7</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <div class="role-heading">
+                        <h5 class="mb-1">Restricted User</h5>
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#modalCenter" class="role-edit-modal"><span>Edit Role</span></a>
+                      </div>
+                      <a href="javascript:void(0);"><i class="bx bx-copy bx-md text-muted"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 -->
+              <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="row h-100">
+                    <div class="col-sm-5">
+                      <div class="d-flex align-items-end h-100 justify-content-center mt-sm-0 mt-4 ps-6">
+                        <img src="../assets/img/illustrations/lady-with-laptop-light.png" class="img-fluid" alt="Image" width="120" data-app-light-img="illustrations/lady-with-laptop-light.png" data-app-dark-img="illustrations/lady-with-laptop-dark.png">
+                      </div>
+                    </div>
+                    <div class="col-sm-7">
+                      <div class="card-body text-sm-end text-center ps-sm-0">
+                        <button data-bs-toggle="modal" data-bs-target="#modalCenter" class="btn btn-sm btn-primary mb-4 text-nowrap add-new-role"> <i class="bx bx-plus bx-sm me-0 me-sm-2"></i> Add New Role</button>
+                        <p class="mb-0"> Add new role, <br> if it doesn't exist.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- /cards section ends -->
+
+          
+          
+              
+             <!-- Table starts from here -->
+             <div class="card p-3">
+              <!-- <h5 class="card-header">Users Information</h5> -->
+              <div class="card-header">
+              <div class="d-flex align-items-center justify-content-between">
+                <h5 class="card-title mb-0">Search Filters</h5>
+                <!-- <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
+                  Add Role
+              </button> -->
+                </div>
+                 <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
+                   <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
+                       <option value=""> Select Role </option>
+                       <option value="Admin">Admin</option>
+                       <option value="Author">Author</option>
+                       <option value="Editor">Editor</option>
+                       <option value="Maintainer">Maintainer</option>
+                       <option value="Subscriber">Subscriber</option>
+                     </select></div>
+                   <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
+                       <option value=""> Select Plan </option>
+                       <option value="Basic">Basic</option>
+                       <option value="Company">Company</option>
+                       <option value="Enterprise">Enterprise</option>
+                       <option value="Team">Team</option>
+                     </select></div>
+                   <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
+                       <option value=""> Select Status </option>
+                       <option value="Pending" class="text-capitalize">Pending</option>
+                       <option value="Active" class="text-capitalize">Active</option>
+                       <option value="Inactive" class="text-capitalize">Inactive</option>
+                     </select></div>
+                 </div>
+               </div>
+               <!-- /table header -->
+            
+            <div class="table-responsive text-nowrap">
+              <table class="table" id="datatable">
+                <thead>
+                  <tr>
+                    <th>SR. NO.</th>
+                    <th>ROLE ID</th>
+                    <th>ROLE NAME</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                  <!-- first row data -->
+                  <tr>
+                    <td>1</td>
+                    <td>
+                       201
+                    </td>
+                    <td>
+                       <span class="fw-medium">Vedika Patil</span>
+                    </td>
+                    
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <!-- second row data -->
+                  <tr>
+                    <td>2</td>
+                    <td>
+                       202
+                    </td>
+                    <td>
+                       <span class="fw-medium">Nilesh Tayade</span>
+                    </td>
+                    
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                 
+                  <tr>
+                    <td>3</td>
+                    <td>203</td>
+                    <td><span class="fw-medium">Darshit Puranik</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-edit-alt me-1"></i> Edit
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-trash me-1"></i> Delete
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>204</td>
+                    <td><span class="fw-medium">Kamesh Surwade</span></td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-edit-alt me-1"></i> Edit
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                    <i class="bx bx-trash me-1"></i> Delete
+                                </a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+<!-- Vertically Centered Modal -->
+<div class="col-lg-4 col-md-6">
+  <div class="mt-3">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCenter">
+      Open Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCenterTitle">Add Role Details</h5>
+            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Role id</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Role ID" required=""
+                      spellcheck="false" data-ms-editor="true" data-last-active-input="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Role Name</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Role Name" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+
+                <div class="row g-2">
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">SR NO</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Sr No" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">Module</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Module" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+                <div class="row g-2">
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">Sub Module</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Sub Module"
+                      required="" spellcheck="false" data-ms-editor="true">
+                  </div>
+                  <div class="col mb-0">
+                    <label for="nameWithTitle" class="form-label">Action</label>
+                    <input type="text" id="nameWithTitle" class="form-control" placeholder="Enter Action" required=""
+                      spellcheck="false" data-ms-editor="true">
+                  </div>
+                </div>
+                <table>
+                  <tbody>
+                    <tr>
+
+                    </tr>
+                    <tr>
+
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+             
+            <h5 class="mb-4">Role Permissions</h5>
+            <!-- Permission table -->
+            <div class="table-responsive">
+              <table class="table table-flush-spacing mb-0">
+                <tbody>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Administrator Access <i class="bx bx-info-circle"
+                        data-toggle="tooltip" data-placement="top" aria-label="Allows a full access to the system"
+                        title="Allows a full access to the system"></i></td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="selectAll">
+                          <label class="form-check-label" for="selectAll">
+                            Select All
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">User Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="text-nowrap fw-medium text-heading">Content Management</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="contentManagementRead">
+                          <label class="form-check-label" for="contentManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="contentManagementWrite">
+                          <label class="form-check-label" for="contentManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="contentManagementCreate">
+                          <label class="form-check-label" for="contentManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <!-- Add additional rows as necessary -->
+                </tbody>
+              </table>
+            </div>
+            <!-- Permission table -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                Cancel
+              </button>
+              <button type="submit" class="btn btn-primary">Add Changes</button>
+            </div>
+          </form>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <!-- Vertically Centered Modal End -->
+
+          </div>
+          <!--/ Layout Demo -->
+        </div>
+        <!-- / Content -->
+
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div
+              class="container-fluid d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column"
+            >
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , All rights reserved by
+                <a
+                  href="https://sitesoch.com"
+                  target="_blank"
+                  class="footer-link fw-medium"
+                  >Sitesoch</a
+                >
+              </div>
+              <div class="d-none d-lg-inline-block">
+                <a
+                  href="https://themeselection.com/license/"
+                  class="footer-link me-4"
+                  target="_blank"
+                  >License</a
+                >
+
+                <a
+                  href="https://github.com/themeselection/sneat-html-admin-template-free/issues"
+                  target="_blank"
+                  class="footer-link"
+                  >Support</a
+                >
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+  <!-- / Layout wrapper -->
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+
+  <script src="../assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../assets/vendor/libs/popper/popper.js"></script>
+  <script src="../assets/vendor/js/bootstrap.js"></script>
+  <script src="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="../assets/vendor/js/menu.js"></script>
+
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+
+  <!-- Main JS -->
+  <script src="../assets/js/main.js"></script>
+
+  <!-- Page JS -->
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <!-- datatable code includes jquery cdn -->
+  <script src="../assets/vendor/js/jquery.js"></script>
+  <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
+  <!-- datatable css -->
+  <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#datatable').dataTable({
+        /* SCROLLING */
+        // scrollY:true,
+        //scrollCollapse: true,
+        // paging: true,
+        // scrollX: true,
+        // info: true,
+        // dom: 'Bfrtip',
+        // select: true,
+        
+        // to limit records
+        // pageLength: 5,
+        
+        // recordsTotal: 50,
+      });
+    });
+  </script>
+  <!-- JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const selectAllCheckbox = document.getElementById('selectAll');
+    const checkboxes = document.querySelectorAll('.form-check-input:not(#selectAll)');
+  
+    selectAllCheckbox.addEventListener('change', () => {
+      checkboxes.forEach(checkbox => {
+        checkbox.checked = selectAllCheckbox.checked;
+      });
+    });
+  });
+  </script>
+</body>
+</html>

@@ -658,6 +658,8 @@ div.dt-container div.dt-layout-row div.dt-layout-cell {
   padding: 0 1.5rem;
 }
 
+
+
 div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-start {
   justify-content: flex-start;
 }
@@ -982,4 +984,17 @@ html.dark .dt-container .dt-paging .dt-paging-button:active {
 
 *[dir=rtl] div.dt-container div.dt-search input {
   margin: 0 3px 0 0
+}
+
+
+/* modaal table css */
+.modal-table div.dt-container div.dt-layout-row div.dt-layout-cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.modal-table .table-flush-spacing tr{
+  padding:;
 }

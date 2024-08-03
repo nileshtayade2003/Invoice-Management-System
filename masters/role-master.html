@@ -686,121 +686,18 @@
                       spellcheck="false" data-ms-editor="true">
                   </div>
                 </div>
+                <div class="row">
+                  <div class="col mb-3">
+                    <label for="nameWithTitle" class="form-label">Role Description</label>
+                    <textarea type="text" id="nameWithTitle" class="form-control" placeholder="Enter Role Description" required=""
+                      spellcheck="false" data-ms-editor="true"></textarea>
+                  </div>
+                </div>
               </div>
              
             <h5 class="mb-2 mt-5">Role Permissions</h5>
             <!-- Permission table -->
-           <!-- <div class="table-responsive modal-table" >
-              <table class="table table-flush-spacing mb-0" id="table1">
-                <thead>
-                  <tr>
-                    <th>SR. NO.</th>
-                    <th>MODULE</th>
-                    <th>SUB MODULE</th>
-                    <th>ACTIONS</th>
-                  </tr>
-                </thead>
-                <tbody >
-                 
-                  <tr>
-                    <td>1</td>
-                    <td>
-                       201
-                    </td>
-                    <td>
-                       <span class="fw-medium">Vedika Patil</span>
-                    </td>
-                    
-                    <td>
-                      <div class="dropdown">
-                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                          <i class="bx bx-dots-vertical-rounded"></i>
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                          >
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            ><i class="bx bx-trash me-1"></i> Delete</a
-                          >
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-
-                  
-                  <tr>
-                    <td>2</td>
-                    <td>
-                       202
-                    </td>
-                    <td>
-                       <span class="fw-medium">Nilesh Tayade</span>
-                    </td>
-                    
-                    <td>
-                      <div class="dropdown">
-                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                          <i class="bx bx-dots-vertical-rounded"></i>
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                          >
-                          <a class="dropdown-item" href="javascript:void(0);"
-                            ><i class="bx bx-trash me-1"></i> Delete</a
-                          >
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                 
-                  <tr>
-                    <td>3</td>
-                    <td>203</td>
-                    <td><span class="fw-medium">Darshit Puranik</span></td>
-                    <td>
-                        <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <i class="bx bx-edit-alt me-1"></i> Edit
-                                </a>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <i class="bx bx-trash me-1"></i> Delete
-                                </a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>204</td>
-                    <td><span class="fw-medium">Kamesh Surwade</span></td>
-                    <td>
-                        <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <i class="bx bx-edit-alt me-1"></i> Edit
-                                </a>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <i class="bx bx-trash me-1"></i> Delete
-                                </a>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-              </table>
-            </div>-->
-
-
-            
+           
             <div class="table-responsive modal-table" >
               <table class="table table-flush-spacing mb-0" id="table1">
                 <thead>
@@ -824,7 +721,7 @@
                 <tbody>
                  
                   <tr>
-                    <td>1</td>
+                    <td> </td>
                     <td><input class="form-control" type="text" id="nameWithTitle" />
                     </td>
                     <td><input class="form-control" type="text" id="nameWithTitle" /></td>
@@ -852,7 +749,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>2</td>
+                    <td>1</td>
                     <td>Credit Monitoring</td>
                     <td>Credit Monitoring</td>
                      <td>
@@ -879,9 +776,37 @@
                     </td>
                   </tr>
                   <tr>
+                    <td>2</td>
+                    <td>Customer Payments</td>
+                    <td>Customer Payments</td>
+                    <td>
+                      <div class="d-flex justify-content-end">
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementRead">
+                          <label class="form-check-label" for="userManagementRead">
+                            Read
+                          </label>
+                        </div>
+                        <div class="form-check mb-0 me-4 me-lg-2">
+                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
+                          <label class="form-check-label" for="userManagementWrite">
+                            Write
+                          </label>
+                        </div>
+                        <div class="form-check mb-0">
+                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
+                          <label class="form-check-label" for="userManagementCreate">
+                            Create
+                          </label>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
                     <td>3</td>
-                    <td>Customer Payments</td>
-                    <td>Customer Payments</td>
+                    <td>Collections Automation</td>
+                    <td>Collections Automation</td>
                     <td>
                       <div class="d-flex justify-content-end">
                         <div class="form-check mb-0 me-4 me-lg-2">
@@ -905,34 +830,11 @@
                       </div>
                     </td>
                   </tr>
-                 
-                 <!--<tr>
-                    <td class="text-nowrap fw-medium text-heading">Role Management</td>
-                    <td>
-                      <div class="d-flex justify-content-end">
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementRead">
-                          <label class="form-check-label" for="userManagementRead">
-                            Read
-                          </label>
-                        </div>
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
-                          <label class="form-check-label" for="userManagementWrite">
-                            Write
-                          </label>
-                        </div>
-                        <div class="form-check mb-0">
-                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
-                          <label class="form-check-label" for="userManagementCreate">
-                            Create
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
+
                   <tr>
-                    <td class="text-nowrap fw-medium text-heading">Client Management</td>
+                    <td>4</td>
+                    <td>Cash Application</td>
+                    <td>Cash Application</td>
                     <td>
                       <div class="d-flex justify-content-end">
                         <div class="form-check mb-0 me-4 me-lg-2">
@@ -956,82 +858,6 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
-                    <td class="text-nowrap fw-medium text-heading">Tax Management</td>
-                    <td>
-                      <div class="d-flex justify-content-end">
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementRead">
-                          <label class="form-check-label" for="userManagementRead">
-                            Read
-                          </label>
-                        </div>
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
-                          <label class="form-check-label" for="userManagementWrite">
-                            Write
-                          </label>
-                        </div>
-                        <div class="form-check mb-0">
-                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
-                          <label class="form-check-label" for="userManagementCreate">
-                            Create
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-nowrap fw-medium text-heading">Product Management</td>
-                    <td>
-                      <div class="d-flex justify-content-end">
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementRead">
-                          <label class="form-check-label" for="userManagementRead">
-                            Read
-                          </label>
-                        </div>
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
-                          <label class="form-check-label" for="userManagementWrite">
-                            Write
-                          </label>
-                        </div>
-                        <div class="form-check mb-0">
-                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
-                          <label class="form-check-label" for="userManagementCreate">
-                            Create
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="text-nowrap fw-medium text-heading">Transaction Management</td>
-                    <td>
-                      <div class="d-flex justify-content-end">
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementRead">
-                          <label class="form-check-label" for="userManagementRead">
-                            Read
-                          </label>
-                        </div>
-                        <div class="form-check mb-0 me-4 me-lg-2">
-                          <input class="form-check-input" type="checkbox" id="userManagementWrite">
-                          <label class="form-check-label" for="userManagementWrite">
-                            Write
-                          </label>
-                        </div>
-                        <div class="form-check mb-0">
-                          <input class="form-check-input" type="checkbox" id="userManagementCreate">
-                          <label class="form-check-label" for="userManagementCreate">
-                            Create
-                          </label>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  --> 
                   <!-- Add additional rows as necessary--> 
                 </tbody>
               </table>
@@ -1044,7 +870,6 @@
               </button>
             </div>
           </form>
-          
           </div>
         </div>
       </div>

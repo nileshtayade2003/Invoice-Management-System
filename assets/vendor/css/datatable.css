@@ -988,7 +988,7 @@ html.dark .dt-container .dt-paging .dt-paging-button:active {
 
 
 /* modaal table css */
-.modal-table div.dt-container div.dt-layout-row div.dt-layout-cell {
+/*.modal-table div.dt-container div.dt-layout-row div.dt-layout-cell {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -996,5 +996,5 @@ html.dark .dt-container .dt-paging .dt-paging-button:active {
 }
 
 .modal-table .table-flush-spacing tr{
-  padding:;
+  padding:0;
 }

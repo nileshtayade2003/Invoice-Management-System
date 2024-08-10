@@ -394,28 +394,28 @@
 
                 <!-- Table 2 starts here -->
                 <div class="table-responsive text-nowrap">
-                  <table class="table" id="datatable">
+                  <table class="table" id="table1">
                     <thead>
                       <tr>
-                        <th>Product</th>
+                        <th class="d-flex justify-content-start">Product</th>
                         <th>Quantity</th>
                         <th>Unit Price</th>
-                        <th>Amount</th>
-                        <th>actions</th>
+                        <th class="d-flex justify-content-start">Amount</th>
+                        <th>Actions</th>
                       </tr>
                     </thead>
                     <tbody class="table-border-bottom-0">
 
                       <!-- first row data -->
                       <tr>
-                        <td>01</td>
+                        <td class="d-flex justify-content-start">01</td>
                         <td>
                            abc123
                         </td>
                         <td>
                            Web Services
                         </td>
-                        <td>10,000</td>
+                        <td class="d-flex justify-content-start">10,000</td>
                         <td>
                           <div class="dropdown">
                             <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
@@ -570,7 +570,7 @@
                   <div class="card-body">
                     <div style="margin-top: 20px;">
                       
-                      <label for="terms" style="font-size: 16px; color: #333; display: block; margin-bottom: 10px;">Terms and Conditions</label>
+                      <h5 class="card-title mb-0" style="padding-bottom: 10px;">Terms and Conditions</h5>
                       <input type="text" id="terms" name="terms"  style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #cccccc; border-radius: 4px;">
                       <button style="margin-top: 10px; padding: 10px 20px; background-color: #696cff; color:  #fff; border: none; border-radius: 5px; cursor: pointer;">Add Notes</button>
                     </div>
@@ -668,25 +668,10 @@
      
      <script type="text/javascript">
        $(document).ready(function(){
-         $('#datatable').dataTable({
-
-          
-         
-           /* SCROLLING */
-           // scrollY:true,
-           //scrollCollapse: true,
-           // paging: true,
-           // scrollX: true,
-           // info: true,
-           // dom: 'Bfrtip',
-           // select: true,
-           
-           // to limit records
-           // pageLength: 5,
-           
-           // recordsTotal: 50,
-         });
-       });
+      $('#datatable').dataTable();
+      $('#table1').dataTable();
+      $('#table1').removeClass('table-flush-spacing');
+    });
      </script>
   </body>
 </html>

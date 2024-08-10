@@ -392,10 +392,62 @@
                 </div>
                 <!-- /table ends -->
 
+                <!-- Table 2 starts here -->
+                <div class="table-responsive text-nowrap">
+                  <table class="table" id="datatable">
+                    <thead>
+                      <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Amount</th>
+                        <th>actions</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+
+                      <!-- first row data -->
+                      <tr>
+                        <td>01</td>
+                        <td>
+                           abc123
+                        </td>
+                        <td>
+                           Web Services
+                        </td>
+                        <td>10,000</td>
+                        <td>
+                          <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                              >
+                              <a class="dropdown-item" href="javascript:void(0);"
+                                ><i class="bx bx-trash me-1"></i> Delete</a
+                              >
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /table ends -->
+
+
+
+
+
+
+
                  <!-- offcanvas -->
                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
                   <div class="offcanvas-header">
-                    <h5 id="offcanvasEndLabel" class="offcanvas-title">Add Tax</h5>
+                    <h5 id="offcanvasEndLabel" class="offcanvas-title">Add Invoice</h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body mx-0 flex-grow-0">
@@ -457,8 +509,8 @@
                               <label for="currencies" class="form-label">Currencies</label>
                               <select id="currencies" class="form-select form-control" required>
                                 <!-- <option disabled selected>Select Status</option> -->
-                                <option value="1">Paid</option>
-                                <option value="2">Unpaid</option>
+                                <option value="1">Dollor</option>
+                                <option value="2">Rs</option>
                               </select>
                           </div>
                       </div>
@@ -516,49 +568,27 @@
               <div class="col-lg-3 col-12 invoice-actions">
                 <div class="card mb-6">
                   <div class="card-body">
-                    <button class="btn btn-primary d-grid w-100" data-bs-toggle="offcanvas" data-bs-target="#sendInvoiceOffcanvas">
-                      <span class="d-flex align-items-center justify-content-center text-nowrap"><i class="bx bx-paper-plane bx-sm me-2"></i>Send Invoice</span>
-                    </button>
-                    <div class="d-flex my-4">
-                      <a href="./app-invoice-preview.html" class="btn btn-label-secondary w-100 me-4">Preview</a>
-                      <button type="button" class="btn btn-label-secondary w-100">Save</button>
+                    <div style="margin-top: 20px;">
+                      
+                      <label for="terms" style="font-size: 16px; color: #333; display: block; margin-bottom: 10px;">Terms and Conditions</label>
+                      <input type="text" id="terms" name="terms"  style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #cccccc; border-radius: 4px;">
+                      <button style="margin-top: 10px; padding: 10px 20px; background-color: #696cff; color:  #fff; border: none; border-radius: 5px; cursor: pointer;">Add Notes</button>
                     </div>
-                    <button class="btn btn-success d-grid w-100" data-bs-toggle="offcanvas" data-bs-target="#addPaymentOffcanvas">
-                      <span class="d-flex align-items-center justify-content-center text-nowrap"><i class="bx bx-dollar bx-sm me-1"></i>Add Payment</span>
-                    </button>
-                  </div>
-                </div>
-                <div>
-                  <label for="acceptPaymentsVia" class="form-label">Accept payments via</label>
-                  <select class="form-select mb-6" id="acceptPaymentsVia">
-                    <option value="Bank Account">Bank Account</option>
-                    <option value="Paypal">Paypal</option>
-                    <option value="Card">Credit/Debit Card</option>
-                    <option value="UPI Transfer">UPI Transfer</option>
-                  </select>
-                  <div class="d-flex justify-content-between mb-2">
-                    <label for="payment-terms">Payment Terms</label>
-                    <div class="form-check form-switch me-n2">
-                      <input type="checkbox" class="form-check-input" id="payment-terms" checked="">
+                    
+                    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
+                      <button style="padding: 10px 20px; background-color: #696cff; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Save as Draft</button>
+                      <button style="padding: 10px 20px; background-color: #696cff; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Save</button>
+                      <button style="padding: 10px 20px; background-color: #696cff; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Download</button>
                     </div>
-                  </div>
-                  <div class="d-flex justify-content-between mb-2">
-                    <label for="client-notes">Client Notes</label>
-                    <div class="form-check form-switch me-n2">
-                      <input type="checkbox" class="form-check-input" id="client-notes" checked="">
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <label for="payment-stub">Payment Stub</label>
-                    <div class="form-check form-switch me-n2">
-                      <input type="checkbox" class="form-check-input" id="payment-stub" checked="">
-                    </div>
+              
+                    
                   </div>
                 </div>
               </div>
-             </div>
-              <!--/ main content ends here -->
-            </div>
+              
+                
+            <!--/ main content ends here -->
+
             <!-- / Content -->
 
             <!-- Footer -->
@@ -639,6 +669,9 @@
      <script type="text/javascript">
        $(document).ready(function(){
          $('#datatable').dataTable({
+
+          
+         
            /* SCROLLING */
            // scrollY:true,
            //scrollCollapse: true,

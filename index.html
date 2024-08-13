@@ -257,7 +257,7 @@
                             </div>
                           </div>
                           <div class="flex-grow-1">
-                            <span class="fw-medium d-block">John Doe</span>
+                            <span class="fw-medium d-block" id="profile-name"></span>
                             <small class="text-muted">Admin</small>
                           </div>
                         </div>
@@ -583,6 +583,11 @@
           // recordsTotal: 50,
         });
       });
+    </script>
+    
+    <script>
+      let logininfo = JSON.parse(localStorage.getItem('logininfo'));
+      document.getElementById('profile-name').innerHTML = logininfo.email;
     </script>
   </body>
 </html>

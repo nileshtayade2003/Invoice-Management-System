@@ -1,3 +1,29 @@
+/******** login page ******* */
+let loginForm = document.getElementById('loginform')
+loginForm.addEventListener('submit',function(event){
+  event.preventDefault(); //to prevent the reloading of page
+
+  let organization = document.getElementById('organization').value;
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
+
+  const logindata = {
+    organization:organization,
+    email:email,
+    password:password
+  }
+
+  localStorage.setItem('logininfo',JSON.stringify(logindata));
+
+  loginForm.reset();
+
+  window.location.href='index.html'; //to redirect after submission
+})
+
+/******** index page ***********************/
+
+
+
 /********* invoice management **********/
 document.getElementById('invoice-additembtn').addEventListener('click', function() {
   const cardContainer = document.getElementById('invoice-container');

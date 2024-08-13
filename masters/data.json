@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "code": "0121",
+    "name": "Jasica Thompson",
+    "email": "jasica@gmail.com",
+    "phone": "+1 234 567 8901"
+  },
+  {
+    "id": 2,
+    "code": "0122",
+    "name": "John Smith",
+    "email": "john@gmail.com",
+    "phone": "+1 234 567 8902"
+  },
+  {
+    "id": 3,
+    "code": "0123",
+    "name": "Jason Williams",
+    "email": "jason@gmail.com",
+    "phone": "+1 234 567 8903"
+  }
+]

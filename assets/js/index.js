@@ -25,13 +25,17 @@ if (window.location.pathname == "/login.html") {
 
 /*************** home page **************/
 else if(window.location.pathname == '/index.html' || window.location.pathname == '/'){
-  const logininfo=JSON.parse(localStorage.getItem("logininfo"))
-  document.getElementById('greeting').innerText=logininfo.email
-  document.getElementById('user-profile-email').innerText=logininfo.email
+
+   const logindata = JSON.parse(localStorage.getItem('logininfo'))
+   document.getElementById('user-profile-email').innerText = logindata.email;
+   document.getElementById('greeting').innerText = logindata.email;
+
 }
 
 /***************** User Master **********************/
-else if(window.location.pathname == '/masters/user-master.html'){}
+else if(window.location.pathname == '/masters/user-master.html'){
+  
+}
 
 
 /***************** Organization Master **********************/
@@ -158,9 +162,4 @@ else if (window.location.pathname == "/invoice-management/invoice-add.html") {
     });
 }
 
-/******** index page ***********************/
-
-
-
-/********* invoice management **********/
 

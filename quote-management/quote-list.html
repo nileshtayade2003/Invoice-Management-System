@@ -182,7 +182,7 @@
               <div data-i18n="invoice">Invoice Management</div>
             </a>
           </li>
-        
+         
         </ul>
       </aside>
         <!-- / Menu -->
@@ -226,7 +226,7 @@
 
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <!-- Place this tag where you want the button to render. -->
-              
+               
 
                 <!-- User -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
@@ -296,7 +296,6 @@
 
           <!-- / Navbar -->
 
- 
           <!-- Content wrapper -->
           <div class="content-wrapper">
             <!-- Content -->
@@ -304,272 +303,229 @@
             <div class="container-fluid flex-grow-1 container-p-y">
               <!-- main content here -->
 
-             <div class="row">
-               <!-- grids  -->
-               <div class="col-lg-9 col-12 mb-lg-0 mb-6">
-                <div class="card invoice-preview-card p-sm-12 p-6">
-                 
-                   <!-- Table Section -->
-               <!-- Basic Bootstrap Table -->
+              <!-- cards -->
+              <div class="card mb-4">
+                <div class="card-widget-separator-wrapper">
+                  <div class="card-body card-widget-separator">
+                    <div class="row gy-4 gy-sm-1">
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center card-widget-1 border-end pb-4 pb-sm-0">
+                          <div>
+                            <h4 class="mb-0">24</h4>
+                            <p class="mb-0">Clients</p>
+                          </div>
+                          <div class="avatar me-sm-4">
+                            <span class="avatar-initial rounded bg-label-secondary text-heading">
+                              <i class="bx bx-user bx-26px"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <hr class="d-none d-sm-block d-lg-none me-4">
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center card-widget-2 border-end pb-4 pb-sm-0">
+                          <div>
+                            <h4 class="mb-0">165</h4>
+                            <p class="mb-0">Quotes</p>
+                          </div>
+                          <div class="avatar me-lg-4">
+                            <span class="avatar-initial rounded bg-label-secondary text-heading">
+                              <i class="bx bx-file bx-26px"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <hr class="d-none d-sm-block d-lg-none">
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center border-end pb-4 pb-sm-0 card-widget-3">
+                          <div>
+                            <h4 class="mb-0">$2.46k</h4>
+                            <p class="mb-0">Paid</p>
+                          </div>
+                          <div class="avatar me-sm-4">
+                            <span class="avatar-initial rounded bg-label-secondary text-heading">
+                              <i class="bx bx-check-double bx-26px"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h4 class="mb-0">$876</h4>
+                            <p class="mb-0">Unpaid</p>
+                          </div>
+                          <div class="avatar">
+                            <span class="avatar-initial rounded bg-label-secondary text-heading">
+                              <i class="bx bx-error-circle bx-26px"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- table -->
               <div class="card p-3">
-                <!-- <h5 class="card-header">Tax Details</h5> -->
-                  <!-- table header -->
-                  <div class="card-header">
-                    <div class="d-flex align-items-center justify-content-between">
-                     <h5 class="card-title mb-0">Search Filters</h5>
-                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd"
-                     aria-controls="offcanvasEnd">
-                     <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
-                       Add Quote
-                   </button>
-                    </div>
-                     <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
-                       <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
-                           <option value=""> Select Role </option>
-                           <option value="Admin">Admin</option>
-                           <option value="Author">Author</option>
-                           <option value="Editor">Editor</option>
-                           <option value="Maintainer">Maintainer</option>
-                           <option value="Subscriber">Subscriber</option>
-                         </select></div>
-                       <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
-                           <option value=""> Select Plan </option>
-                           <option value="Basic">Basic</option>
-                           <option value="Company">Company</option>
-                           <option value="Enterprise">Enterprise</option>
-                           <option value="Team">Team</option>
-                         </select></div>
-                       <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
-                           <option value=""> Select Status </option>
-                           <option value="Pending" class="text-capitalize">Pending</option>
-                           <option value="Active" class="text-capitalize">Active</option>
-                           <option value="Inactive" class="text-capitalize">Inactive</option>
-                         </select></div>
-                     </div>
-                   </div>
-                   <!-- /table header -->
-
-                <div class="table-responsive text-nowrap">
-                  <table class="table" id="datatable">
-                    <thead>
-                      <tr>
-                        <th>SR. NO.</th>
-                        <th>Quote code</th>
-                        <th>client</th>
-                        <th>Quote date</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <!-- first row data -->
-                      <tr>
-                        <td>01</td>
-                        <td>
-                           abc123
-                        </td>
-                        <td>
-                           Nilesh Tayade
-                        </td>
-                        <td>28/10/2024</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
+              <div class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                 <h5 class="card-title mb-0">Search Filters</h5>
+                 <a href="quote-add.html" class="btn btn-primary text-white">
+                 <i class="bx bx-plus bx-sm me-0 me-sm-2"></i>
+                   Add Quote
+               </a>
                 </div>
-                <!-- /table ends -->
+                 <div class="d-flex justify-content-between align-items-center row pt-4 gap-4 gap-md-0 g-6">
+                   <div class="col-md-4 user_role"><select id="UserRole" class="form-select text-capitalize">
+                       <option value=""> Select Role </option>
+                       <option value="Admin">Admin</option>
+                       <option value="Author">Author</option>
+                       <option value="Editor">Editor</option>
+                       <option value="Maintainer">Maintainer</option>
+                       <option value="Subscriber">Subscriber</option>
+                     </select></div>
+                   <div class="col-md-4 user_plan"><select id="UserPlan" class="form-select text-capitalize">
+                       <option value=""> Select Plan </option>
+                       <option value="Basic">Basic</option>
+                       <option value="Company">Company</option>
+                       <option value="Enterprise">Enterprise</option>
+                       <option value="Team">Team</option>
+                     </select></div>
+                   <div class="col-md-4 user_status"><select id="FilterTransaction" class="form-select text-capitalize">
+                       <option value=""> Select Status </option>
+                       <option value="Pending" class="text-capitalize">Pending</option>
+                       <option value="Active" class="text-capitalize">Active</option>
+                       <option value="Inactive" class="text-capitalize">Inactive</option>
+                     </select></div>
+                 </div>
+               </div>
+               <!-- /table header -->
 
-                <!-- Table 2 starts here -->
-                <div class="table-responsive text-nowrap">
-                  <table class="table" id="table1">
-                    <thead>
-                      <tr>
-                        <th class="d-flex justify-content-start">Product</th>
-                        <th>Quantity</th>
-                        <th>Unit Price</th>
-                        <th class="d-flex justify-content-start">Amount</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-
-                      <!-- first row data -->
-                      <tr>
-                        <td class="d-flex justify-content-start">01</td>
-                        <td>
-                           abc123
-                        </td>
-                        <td>
-                           Web Services
-                        </td>
-                        <td class="d-flex justify-content-start">10,000</td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-                <!-- /table ends -->
-
-
-
-
-
-
-
-                 <!-- offcanvas -->
-                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
-                  <div class="offcanvas-header">
-                    <h5 id="offcanvasEndLabel" class="offcanvas-title">Add Quote</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <div class="offcanvas-body mx-0 flex-grow-0">
-                    <!-- form here -->
-                    <form action="">
-                      <div class="row">
-                        <div class="col mb-3">
-                            <label for="client" class="form-label">Client</label>
-                            <select id="client" class="form-select form-control" required>
-                              <!-- <option disabled selected>Select Status</option> -->
-                              <option value="1">Nilesh</option>
-                              <option value="2">Kamesh</option>
-                            </select>
-                        </div>
-                    </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="quoteCode" class="form-label">Quote Code</label>
-                            <input
-                              type="text"
-                              id="quoteCode"
-                              class="form-control"
-                              placeholder="Enter Quote Code" required />
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <label for="quoteDate" class="form-label">Quote Date</label>
-                            <input
-                              type="date"
-                              id="quoteDate"
-                              class="form-control"
-                              required />
-                          </div>
-                        </div>
-                      
-                      <div class="row">
-                          <div class="col mb-3">
-                              <label for="currencies" class="form-label">Currencies</label>
-                              <select id="currencies" class="form-select form-control" required>
-                                <!-- <option disabled selected>Select Status</option> -->
-                                <option value="1">Dollor</option>
-                                <option value="2">Rs</option>
-                              </select>
-                          </div>
-                      </div>
-                        
-                      <div>
-                        <button type="submit" class="btn btn-primary data-submit">Submit</button>
-                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="offcanvas">
-                          Cancel
+            <div class="table-responsive text-nowrap">
+              <table class="table" id="datatable">
+                <thead>
+                  <tr>
+                    <th>SR.NO.</th>
+                    <th>Quote code</th>
+                    <th>Client</th>
+                    <th>Quote date</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                  <!-- first row data -->
+                  <tr>
+                    <td>01</td>
+                    <td>
+                       abc123
+                    </td>
+                    <td>
+                       Nilesh Tayade
+                    </td>
+                    <td>28/10/2024</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
                         </button>
-                      </div>
-                    </form>
-                   
-                  </div>
-                </div>
-                <!-- /offcanvas ends -->
-
-
-              </div>
-              
-                 
-                  <hr class="my-0">
-                  <!-- table footer -->
-                  <div class="card-body ">
-                    <div class="row d-flex justify-content-end mx-2">
-                     <!-- table footer -->
-                      <div class="col-md-6 d-flex justify-content-end">
-                        <div class="invoice-calculations">
-                          <div class="d-flex justify-content-between mb-2">
-                            <span class="w-px-100">Subtotal:</span>
-                            <span class="fw-medium text-heading">$1800</span>
-                          </div>
-                          <div class="d-flex justify-content-between mb-2">
-                            <span class="w-px-100">Discount:</span>
-                            <span class="fw-medium text-heading">$28</span>
-                          </div>
-                          <div class="d-flex justify-content-between mb-2">
-                            <span class="w-px-100">Tax:</span>
-                            <span class="fw-medium text-heading">21%</span>
-                          </div>
-                          <hr class="my-2">
-                          <div class="d-flex justify-content-between">
-                            <span class="w-px-100">Total:</span>
-                            <span class="fw-medium text-heading">$1690</span>
-                          </div>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <hr class="my-0">
-                 
-                </div>
-              </div>
+                    </td>
+                  </tr>
 
-              <!-- side options -->
-              <div class="col-lg-3 col-12 invoice-actions">
-                <div class="card mb-6">
-                  <div class="card-body">
-                    <div style="margin-top: 20px;">
-                      
-                      <h5 class="card-title mb-0" style="padding-bottom: 10px;">Terms and Conditions</h5>
-                      <input type="text" id="terms" name="terms"  style="width: 100%; padding: 10px; font-size: 14px; border: 1px solid #cccccc; border-radius: 4px;">
-                      <button style="margin-top: 10px; padding: 10px 20px; background-color: #696cff; color:  #fff; border: none; border-radius: 5px; cursor: pointer;">Add Notes</button>
-                    </div>
-                    
-                    <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
-                      <button style="padding: 10px 20px; background-color: #696cff; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Save as Draft</button>
-                      <button style="padding: 10px 20px; background-color: #696cff; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Save</button>
-                      <button style="padding: 10px 20px; background-color: #696cff; color: #fff; border: none; border-radius: 5px; cursor: pointer; width: 100%;">Download</button>
-                    </div>
-              
-                    
-                  </div>
-                </div>
-              </div>
-              
-                
-            <!--/ main content ends here -->
+                  <tr>
+                    <td>02</td>
+                    <td>
+                       xyz123
+                    </td>
+                    <td>
+                       Kamesh Surwade
+                    </td>
+                    <td>17/08/2024</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>
+                       mnc123
+                    </td>
+                    <td>
+                        Darshit Puranik
+                    </td>
+                    <td>20/08/2024</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>
+                       mno
+                    </td>
+                    <td>
+                       Vedika Patil
+                    </td>
+                    <td>28/10/2024</td>
+                    <td>
+                      <div class="dropdown">
+                        <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+                          <i class="bx bx-dots-vertical-rounded"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-edit-alt me-1"></i> Edit</a
+                          >
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            ><i class="bx bx-trash me-1"></i> Delete</a
+                          >
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
 
+
+                </tbody>
+              </table>
+            </div>
+            <!-- /table ends -->
+            </div>
+              <!--/ main content ends here -->
+            </div>
             <!-- / Content -->
 
             <!-- Footer -->
@@ -641,18 +597,21 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-     <!-- datatable code includes jquery cdn -->
-     <script src="../assets/vendor/js/jquery.js"></script>
-     <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
-     <!-- datatable css -->
-     <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+
+      <!-- datatable code includes jquery cdn -->
+      <script src="../assets/vendor/js/jquery.js"></script>
+      <script tpe='text/javascript' src="../assets/vendor/js/datatable.js"></script>
+      <!-- datatable css -->
+      <link rel="stylesheet" href="../assets/vendor/css/datatable.css" type="text/css">
+      
+      <script type="text/javascript">
+        $(document).ready(function(){
+       $('#datatable').dataTable();
+     });
+      </script>
+ 
+    <script src="../assets//js/index.js"></script>
      
-     <script type="text/javascript">
-       $(document).ready(function(){
-      $('#datatable').dataTable();
-      $('#table1').dataTable();
-      $('#table1').removeClass('table-flush-spacing');
-    });
-     </script>
+    
   </body>
 </html>

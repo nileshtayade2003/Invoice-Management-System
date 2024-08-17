@@ -25,7 +25,9 @@ if (window.location.pathname == "/login.html") {
 
 /*************** home page **************/
 else if(window.location.pathname == '/index.html' || window.location.pathname == '/'){
-  console.log('you are on home')
+  const logininfo=JSON.parse(localStorage.getItem("logininfo"))
+  document.getElementById('greeting').innerText=logininfo.email
+  document.getElementById('user-profile-email').innerText=logininfo.email
 }
 
 /***************** User Master **********************/
